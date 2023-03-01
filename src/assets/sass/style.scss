@@ -1,5 +1,52 @@
-$clr-prime: #dc3c0b;
+@font-face {
+  font-family: 'Acherus';
+  font-weight: 300;
+  src:  url('../fonts/horizon_type_-_acherusgrotesque-light-webfont.woff2') format('woff2'),
+        url('../fonts/horizon_type_-_acherusgrotesque-light-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'Acherus';
+  font-weight: 400;
+  src:  url('../fonts/horizon_type_-_acherusgrotesque-regular-webfont.woff2') format('woff2'),
+  url('../fonts/horizon_type_-_acherusgrotesque-regular-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'Acherus';
+  font-weight: 500;
+  src:  url('../fonts/horizon_type_-_acherusgrotesque-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/horizon_type_-_acherusgrotesque-semibold-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'Acherus';
+  font-weight: 800;
+  src:  url('../fonts/horizon_type_-_acherusgrotesque-extrabold-webfont.woff2') format('woff2'),
+        url('../fonts/horizon_type_-_acherusgrotesque-extrabold-webfont.woff') format('woff');
+}
+
+
+
 body {
-  font-family: sans-serif;
-  background-color: $clr-prime;
+  font-family: 'Acherus', sans-serif;
+  background-color: #253545;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+
+}
+.logo {
+  width: min(38vw, 600px);
+  height: auto;
+  fill: white;
+  .icon { fill: hsl(189, 96%, 48%); }
+  .label { fill: hsl(83, 86%, 46%); }
+}
+.tag {
+  color: white;
+  font-weight: 300;
+  font-size: 2.5vw;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
 }

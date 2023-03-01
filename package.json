@@ -8,7 +8,7 @@
     "watch:eleventy": "eleventy --serve",
     "build:sass": "sass  --no-source-map src/assets/sass:public/assets/styles",
     "build:eleventy": "eleventy",
-    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
+    "postbuild": "postcss public/assets/styles/*.css -u autoprefixer cssnano -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:sass build:eleventy"
   },
@@ -24,14 +24,14 @@
     "not IE 11"
   ],
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "autoprefixer": "^10.4.2",
+    "@11ty/eleventy": "^2.0.0",
+    "autoprefixer": "^10.4.13",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.0.17",
+    "cssnano": "^5.1.15",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.6",
-    "postcss-cli": "^9.1.0",
-    "sass": "^1.49.7",
-    "esbuild": "^0.14.38"
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.58.3",
+    "esbuild": "^0.17.10"
   }
 }
