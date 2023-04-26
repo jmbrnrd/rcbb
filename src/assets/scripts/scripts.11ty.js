@@ -10,7 +10,6 @@ module.exports = class {
             eleventyExcludeFromCollections: true
         }
     }
-
     async render() {
         await esbuild.build({
             entryPoints: ['src/assets/scripts/main.js'],
