@@ -1,52 +1,30 @@
-@font-face {
-  font-family: 'Acherus';
-  font-weight: 300;
-  src:  url('../fonts/horizon_type_-_acherusgrotesque-light-webfont.woff2') format('woff2'),
-  url('../fonts/horizon_type_-_acherusgrotesque-light-webfont.woff') format('woff');
-}
-@font-face {
-  font-family: 'Acherus';
-  font-weight: 400;
-  src:  url('../fonts/horizon_type_-_acherusgrotesque-regular-webfont.woff2') format('woff2'),
-  url('../fonts/horizon_type_-_acherusgrotesque-regular-webfont.woff') format('woff');
-}
-@font-face {
-  font-family: 'Acherus';
-  font-weight: 500;
-  src:  url('../fonts/horizon_type_-_acherusgrotesque-semibold-webfont.woff2') format('woff2'),
-  url('../fonts/horizon_type_-_acherusgrotesque-semibold-webfont.woff') format('woff');
-}
-@font-face {
-  font-family: 'Acherus';
-  font-weight: 800;
-  src:  url('../fonts/horizon_type_-_acherusgrotesque-extrabold-webfont.woff2') format('woff2'),
-  url('../fonts/horizon_type_-_acherusgrotesque-extrabold-webfont.woff') format('woff');
-}
-@font-face {
-  font-family: 'Varel';
-  font-weight: 400;
-  src:  url('../fonts/varelaround-regular-webfont.woff2') format('woff2'),
-  url('../fonts/varelaround-regular-webfont.woff') format('woff');
-}
+
+@use 'variables' as *;
+
 
 html {
   font-size: 100%;
 }
 body {
-  font-family: Acherus, "SF UI Text", sans-serif;
+  font-family: $ff-primary;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: $fw-normal;
+  color: $clr-grey-900;
 }
 
-h1 {
-  font-family: Acherus, "SF UI Text", sans-serif;
-  font-weight: 500;
-  font-size: 2rem;
+h1, h2, h3 {
+  font-family: $ff-heading;
+  font-weight: $fw-semi-bold;
   line-height: 1.1;
+  color: $clr-primary-500;
 }
 .display {
-  font-weight: 800;
+  font-weight: $fw-bold;
 }
-strong {
-  font-weight: 500;
+h1 { font-size: $fs-x-large; }
+h2 { font-size: $fs-large; }
+h3 { font-size: $fs-default; }
+strong { font-weight: $fw-bold; }
+p ~ p {
+  margin-top:.5rem;
 }

@@ -1,12 +1,8 @@
-# We have the knowledge so you can have the power
+## About
 
-**apptiser** offers simplicity, clarity and effective website solutions for all Hospitality members. We know how hard it is to create, maintain and run a website that works hard for you which is why we created apptiser.
+**apptiser** is created for the Hospitality Industry by ex-Hospitality giants. apptiser is brought to you by the giants that founded Live bookings.With a team that has a collective of over 50 years experience in the hospitality industry you’re in good hands.
 
-**apptiser** takes the uncertainty away from web building. Done are the days when you have to work hard to make a website, we offer you pre-made templates that make your information easy to update and easy to maintain.
+We saw that there were no website builders for the industry that needs websites to work for them the most, so we decided to build it for you.
 
-Think of us as the staff member you never knew you needed. A tech guru that works hard for you and who always makes sure to highlight you in the best light possible.
+Along the way we are also integrating new Hospitality features that we guarantee will be useful and not just another gimmick.
 
-And this is a list:
-
-- list one
-- list two

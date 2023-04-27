@@ -1,0 +1,63 @@
+
+@font-face {
+  font-family: 'Acherus';
+  font-weight: 300;
+  src:  url('../fonts/horizon_type_-_acherusgrotesque-light-webfont.woff2') format('woff2'),
+  url('../fonts/horizon_type_-_acherusgrotesque-light-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'Acherus';
+  font-weight: 400;
+  src:  url('../fonts/horizon_type_-_acherusgrotesque-regular-webfont.woff2') format('woff2'),
+  url('../fonts/horizon_type_-_acherusgrotesque-regular-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'Acherus';
+  font-weight: 500;
+  src:  url('../fonts/horizon_type_-_acherusgrotesque-semibold-webfont.woff2') format('woff2'),
+  url('../fonts/horizon_type_-_acherusgrotesque-semibold-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'Acherus';
+  font-weight: 800;
+  src:  url('../fonts/horizon_type_-_acherusgrotesque-extrabold-webfont.woff2') format('woff2'),
+  url('../fonts/horizon_type_-_acherusgrotesque-extrabold-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'Varel';
+  font-weight: 400;
+  src:  url('../fonts/varelaround-regular-webfont.woff2') format('woff2'),
+  url('../fonts/varelaround-regular-webfont.woff') format('woff');
+}
+
+// fonts
+$ff-primary: Acherus, sans-serif;
+$ff-heading: Acherus, sans-serif;
+$fw-normal: 400;
+$fw-semi-bold: 500;
+$fw-bold: 800;
+$fs-small: .875rem;
+$fs-default: 1rem;
+$fs-large: 2rem;
+$fs-x-large: 4rem;
+$fs-button: $fs-small;
+
+// colors
+$clr-primary-500: hsl(210,30.2%,20.8%);
+$clr-accent-500: hsl(189, 96%, 48%);
+$clr-accent-alt-500: hsl(83, 86%, 46%);
+$clr-grey-900: hsl(0, 0%, 20%);
+
+// padding
+$grid-gap: 2rem;
+$grid-min-col-width: 15rem;
+$padding-default: 1.5rem clamp(1rem, 5%, 3rem);
+
+// transitions
+$trans-duration: 180ms;
+$trans-easing: ease-out;
+
+$layout-margin: 2rem;
+$layout-max-width: min(100% - $layout-margin, 1400px);
+
+
