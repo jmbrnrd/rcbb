@@ -36,6 +36,15 @@ video {
   max-width: 100%;
 }
 
+/* hide outlines */
+* {
+  outline: transparent;
+}
+
 p ~ p {
   margin-top: .5rem;
+}
+
+button:focus-visible {
+
 }

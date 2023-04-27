@@ -30,12 +30,23 @@
 }
 
 html {
-  font-family: Varel, "SF UI Text", sans-serif;
+  font-size: 100%;
+}
+body {
+  font-family: Acherus, "SF UI Text", sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
 }
 
 h1 {
   font-family: Acherus, "SF UI Text", sans-serif;
-  font-weight: 800;
+  font-weight: 500;
   font-size: 2rem;
   line-height: 1.1;
+}
+.display {
+  font-weight: 800;
+}
+strong {
+  font-weight: 500;
 }
