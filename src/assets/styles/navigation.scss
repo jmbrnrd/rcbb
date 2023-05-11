@@ -1,0 +1,59 @@
+@use 'variables' as *;
+
+.nav-global {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  opacity: 1;
+  background-color: transparent;
+  //transition: background-color 100ms ease-out;
+}
+
+.logo {
+  width: min(62vw, 200px);
+  height: auto;
+  fill: white;
+  .icon { fill: hsl(189, 96%, 48%); }
+  .label { fill: hsl(83, 86%, 46%); }
+}
+
+.nav-primary {
+  position: fixed;
+  inset: 0 0 0 auto;
+  z-index: 499;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  list-style: none;
+  width: min(100%, 25em);
+  padding: 15vh 3rem 0;
+  background-color: $clr-primary-500;
+  border-radius: 0;
+  transform: translateX(100%);
+  transition: transform 400ms cubic-bezier(.18,.81,.1,.92);
+  li {
+    > a {
+      font-family: $ff-primary;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: $clr-accent-500;
+    }
+  }
+  &[aria-expanded="true"] {
+    transform: translateX(0);
+  }
+}
+.active {
+  background-color: rgba(#0f2028, 1);
+}
+
+
+@media (max-width: 35em) {
+  .nav-primary {
+    width: 100vw;
+  }
+}

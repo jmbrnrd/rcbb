@@ -1,4 +1,5 @@
-import another from './another';
+import nav from './nav';
+console.log('main.js loaded');
 
-another();
+nav();
 

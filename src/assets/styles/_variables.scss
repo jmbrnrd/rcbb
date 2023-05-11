@@ -33,7 +33,7 @@
 // fonts
 $ff-primary: Acherus, sans-serif;
 $ff-heading: Acherus, sans-serif;
-$fw-normal: 400;
+$fw-normal: 300;
 $fw-semi-bold: 500;
 $fw-bold: 800;
 $fs-small: .875rem;
@@ -50,14 +50,30 @@ $clr-grey-900: hsl(0, 0%, 20%);
 
 // padding
 $grid-gap: 2rem;
-$grid-min-col-width: 15rem;
+$grid-min-col-width: 18rem;
 $padding-default: 1.5rem clamp(1rem, 5%, 3rem);
 
 // transitions
 $trans-duration: 180ms;
 $trans-easing: ease-out;
 
-$layout-margin: 2rem;
-$layout-max-width: min(100% - $layout-margin, 1400px);
+// layouts
+$mq-narrow                    : 35em; // 700px
+$mq-medium                    : 48em; // 960px
+$mq-wide                      : 59em; // 1200px
+
+$layout-margin: 1rem;
+$layout-max-width: min(100% - $layout-margin, 1600px);
+
+// Hamburger button
+$hamburger-padding            : 8px 12px ;
+$hamburger-layer-color        : $clr-primary-500;
+$hamburger-line-width         : 40px !default;
+$hamburger-line-height        : 4px !default;
+$hamburger-line-spacing       : 6px !default;
+$hamburger-line-color         : $clr-accent-alt-500;
+$hamburger-line-border-radius : 2px !default;
+$hamburger-hover-trans-dur    : 0.15s !default;
+$hamburger-hover-trans-func   : linear !default;
 
 

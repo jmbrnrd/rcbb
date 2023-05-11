@@ -14,17 +14,34 @@ body {
 
 h1, h2, h3 {
   font-family: $ff-heading;
-  font-weight: $fw-semi-bold;
+  font-weight: $fw-normal;
   line-height: 1.1;
   color: $clr-primary-500;
+  margin-bottom: 2rem;
 }
 .display {
-  font-weight: $fw-bold;
+  font-weight: $fw-normal;
+  font-size: clamp(2rem, 5vw + 1rem, 5rem);
+  color: white;
+  line-height: 1.05;
+  &-copy {
+    //margin-top: 2rem;
+    font-size: clamp(1rem,1vw + 1rem, 1.5rem);
+    line-height: 1.5;
+    color: $clr-accent-500;
+    opacity: .75;
+  }
 }
 h1 { font-size: $fs-x-large; }
-h2 { font-size: $fs-large; }
+h2 {
+  font-size: $fs-x-large;
+}
 h3 { font-size: $fs-default; }
 strong { font-weight: $fw-bold; }
 p ~ p {
   margin-top:.5rem;
+}
+.brand {
+  font-weight: $fw-semi-bold;
+  color: $clr-accent-alt-500;
 }
