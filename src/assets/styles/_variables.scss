@@ -37,7 +37,7 @@ $fw-normal: 300;
 $fw-semi-bold: 500;
 $fw-bold: 800;
 $fs-small: .875rem;
-$fs-default: 1rem;
+$fs-default: 1.4rem;
 $fs-large: 2rem;
 $fs-x-large: 4rem;
 $fs-button: $fs-small;
@@ -63,7 +63,7 @@ $mq-medium                    : 48em; // 960px
 $mq-wide                      : 59em; // 1200px
 
 $layout-margin: 3.75rem;
-$layout-max-width: min(100% - #{$layout-margin}, 1600px);
+$layout-max-width: min(100% - #{$layout-margin}, 1400px);
 
 // Hamburger button
 $hamburger-padding            : 8px 12px ;

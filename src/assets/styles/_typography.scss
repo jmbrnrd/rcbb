@@ -17,7 +17,7 @@ h1, h2, h3 {
   font-weight: $fw-normal;
   line-height: 1.1;
   color: $clr-primary-500;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .display {
   font-weight: $fw-normal;
@@ -32,12 +32,13 @@ h1, h2, h3 {
     opacity: .75;
   }
 }
-h1 { font-size: $fs-x-large; }
+h1 { font-size: clamp(3rem, 3vw + 1rem, $fs-x-large);  }
 h2 {
-  font-size: $fs-x-large;
+  font-size: clamp(2.5rem, 3vw + 1rem, $fs-x-large);
 }
 h3 { font-size: $fs-default; }
 strong { font-weight: $fw-bold; }
+p { font-size: clamp(1rem, 2vw, $fs-default); }
 p ~ p {
   margin-top:.5rem;
 }
