@@ -62,8 +62,8 @@ $mq-narrow                    : 35em; // 700px
 $mq-medium                    : 48em; // 960px
 $mq-wide                      : 59em; // 1200px
 
-$layout-margin: 1rem;
-$layout-max-width: min(100% - $layout-margin, 1600px);
+$layout-margin: 3.75rem;
+$layout-max-width: min(100% - #{$layout-margin}, 1600px);
 
 // Hamburger button
 $hamburger-padding            : 8px 12px ;
@@ -75,5 +75,3 @@ $hamburger-line-color         : $clr-accent-alt-500;
 $hamburger-line-border-radius : 2px !default;
 $hamburger-hover-trans-dur    : 0.15s !default;
 $hamburger-hover-trans-func   : linear !default;
-
-
