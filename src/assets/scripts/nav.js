@@ -1,11 +1,21 @@
 
 export default function() {
-    console.log('Navigation!');
+    console.log('Navigation loaded!');
+
     const header = document.getElementById('header');
     const navPanel = document.querySelector('.nav-primary');
     const navBtn = document.getElementById('navButton');
 
-    navBtn.addEventListener('click', () => {
+    // Adjust scroll-padding to allow for the header
+    document.documentElement.style.setProperty('--scroll-padding', `${header.offsetHeight}px`);
+
+    // Menu button
+    navBtn.addEventListener('click', openNavigation);
+    // Navigation panel
+    navPanel.addEventListener('click', closeNavigation);
+
+    // Open navigation panel
+    function openNavigation() {
         navBtn.classList.toggle('is-active');
         const open = (navPanel.getAttribute('aria-expanded') === 'true');
         if (open) {
@@ -13,16 +23,19 @@ export default function() {
             return;
         }
         navPanel.setAttribute('aria-expanded', 'true');
-    });
-    navPanel.addEventListener('click', () => {
+    }
+    function closeNavigation() {
         navPanel.setAttribute('aria-expanded', 'false');
         navBtn.classList.remove('is-active');
-    });
+    }
 
+    // Activate the navigation bar when the page is scrolled away from the hero section
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            entry.isIntersecting ? header.classList.remove('active') : header.classList.add('active');
+            entry.isIntersecting
+                ? header.classList.remove('active')
+                : header.classList.add('active');
         });
-    }, {rootMargin: '-150px'});
+    }, { rootMargin: '-150px'} );
     observer.observe(document.getElementById('top'));
 }

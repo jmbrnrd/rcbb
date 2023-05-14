@@ -2,6 +2,7 @@
 
 body {
   background-color: hsl(0 0% 100%);
+  scroll-padding: 5rem;
 }
 
 .grid-wrap {
@@ -38,14 +39,14 @@ body {
 
 section {
   min-height: 100vh;
-  background-image: url('../images/skeleton-ribbon-grey.svg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  h2 {
-    padding-top: 6rem;
-  }
+  //background-image: url('../images/skeleton-ribbon-grey.svg');
+  //background-attachment: fixed;
+  //background-size: cover;
+  //background-position: bottom;
+  //background-repeat: no-repeat;
+  //h2 {
+  //  padding-top: 6rem;
+  //}
 }
 .section-container {
   width: min(100% - #{$layout-margin}, #{$layout-max-width});
