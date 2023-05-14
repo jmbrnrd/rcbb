@@ -39,9 +39,7 @@ h2 {
 h3 { font-size: $fs-default; }
 strong { font-weight: $fw-bold; }
 p { font-size: clamp(1rem, 2vw, $fs-default); }
-p ~ p {
-  margin-top:.5rem;
-}
+
 .brand {
   font-weight: $fw-semi-bold;
   color: $clr-accent-alt-500;
