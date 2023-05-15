@@ -23,11 +23,12 @@ body {
   &.list {
     position: relative;
     li::before {
-      content: url('../images/icon-block.svg');
+      content: url('../images/icon-warn.svg');
       aspect-ratio: 1;
-      margin-right: .5rem;
+      margin-inline: -1.5rem .2rem;
       display: inline-block;
       vertical-align: middle;
+
     }
   }
 
@@ -36,7 +37,8 @@ body {
   }
 }
 .grid-2 {
-  width: 62vw;
+  width: 100%;
+  margin-top: 2rem;
   margin-inline: auto;
   display: grid;
   gap: $grid-gap;
@@ -44,9 +46,9 @@ body {
   place-content: center;
 
 }
-@media (max-width: 30em) {
+@media (min-width: 30em) {
   .grid-2 {
-    width: 100%;
+    max-width: 62vw;
   }
 }
 
@@ -148,6 +150,26 @@ section {
   gap: 1rem;
   margin: 2rem auto;
 }
+
+
+// Contact form
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  border-radius: 2rem;
+  overflow: hidden;
+  padding: .5rem;
+  width: 38vw;
+  div {
+    display: flex;
+    input {
+      flex: auto 1;
+      padding: 1rem;
+    }
+  }
+}
+
 
 
 
