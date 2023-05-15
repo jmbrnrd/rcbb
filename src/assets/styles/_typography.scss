@@ -6,8 +6,9 @@ html {
   font-size: 100%;
 }
 body {
+  font-size: $fs-default;
   font-family: $ff-primary;
-  line-height: 1.5;
+  line-height: 1.4;
   font-weight: $fw-normal;
   color: $clr-grey-900;
 }
@@ -32,13 +33,14 @@ h1, h2, h3 {
     opacity: .75;
   }
 }
-h1 { font-size: clamp(3rem, 3vw + 1rem, $fs-x-large);  }
+h1 { font-size: clamp(3rem, 3vw + 1rem, #{$fs-x-large});  }
 h2 {
-  font-size: clamp(2.5rem, 3vw + 1rem, $fs-x-large);
+  font-size: clamp(2.5rem, 3vw + 1rem, #{$fs-x-large});
+  line-height: 1.1;
 }
 h3 { font-size: $fs-default; }
 strong { font-weight: $fw-bold; }
-p { font-size: clamp(1rem, 2vw, $fs-default); }
+p { font-size: clamp(1rem, 2vw, #{$fs-default}); }
 
 .brand {
   font-weight: $fw-semi-bold;

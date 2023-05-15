@@ -12,6 +12,7 @@ body {
   display: grid;
   column-gap: $grid-gap;
   row-gap: 1rem;
+  list-style: none;
 
   // grid-template-columns: repeat(auto-fit, minmax($grid-min-col-width, 1fr));
 
@@ -19,17 +20,29 @@ body {
   in extra narrow spaces */
   grid-template-columns: repeat(auto-fit, minmax(min(100%, #{$grid-min-col-width}), 1fr));
 
+  &.list {
+    position: relative;
+    li::before {
+      content: url('../images/icon-block.svg');
+      aspect-ratio: 1;
+      margin-right: .5rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
   & + .grid {
     margin-top: $grid-gap;
   }
 }
 .grid-2 {
-  width: 50vw;
+  width: 62vw;
   margin-inline: auto;
   display: grid;
   gap: $grid-gap;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, #{$grid-min-col-width}), 1fr));
   place-content: center;
+
 }
 @media (max-width: 30em) {
   .grid-2 {
@@ -39,14 +52,15 @@ body {
 
 section {
   min-height: 100vh;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   //background-image: url('../images/skeleton-ribbon-grey.svg');
   //background-attachment: fixed;
   //background-size: cover;
   //background-position: bottom;
   //background-repeat: no-repeat;
-  //h2 {
-  //  padding-top: 6rem;
-  //}
 }
 .section-container {
   width: min(100% - #{$layout-margin}, #{$layout-max-width});
@@ -58,7 +72,7 @@ section {
 .hero {
   display: grid;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #000;
   /* background by SVGBackgrounds.com */
   background-image: url("../images/skeleton-ribbon-primary.svg");
@@ -78,12 +92,11 @@ section {
   padding: 2rem;
   h3 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .price {
     display: block;
-
-    font-size: $fs-large;
+    font-size: 1.5rem;
   }
 }
 .product-features {
