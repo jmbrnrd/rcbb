@@ -110,12 +110,12 @@ layout: "base.njk"
                     resources.</li>
                 <li>It's difficult to update your website with new menus, images etc.</li>
                 <li>On some mobile devices your website looks odd, is difficult to use, or just doesn't work.</li>
-                <li>It often takes more than 2 seconds for your website to load.</li>
+                <li>It often takes <a href="#">more than 2 seconds for your website to load</a>.</li>
                 <li>You don't have a budget to future-proof your site, as technology evolves.</li>
                 <li>It's not as easy to access and update your web content as often as you would like.</li>
                 <li>Your website fails to meet basic <a href="#">web accessibility guidelines</a>.</li>
                 <li>Your website is not performing very well in web searches.</li>
-                <li>Your website is not on a secure web server, with a current SSL certificate.</li>
+                <li>Your website is not on a secure web server, with a current <a href="#">SSL certificate</a>.</li>
                 <li>Your content doesn't get synchronised across multiple channels.</li>
 
 {#                <p>Built For Hospitality - a fuss-free website to reach more customers</p>#}
@@ -216,19 +216,22 @@ layout: "base.njk"
             <h2>We'd love to talk to you.</h2>
             <div class="grid">
                 <form action="#" class="form-contact">
-                    <div>
-                        <input name="first name" type="text" aria-label="full name" placeholder="Full name">
+                    <div class="form-field">
+                        <input name="first name"
+                               type="text"
+                               aria-label="full name"
+                               placeholder="Your full name">
                     </div>
-                    <div>
+                    <div class="form-field">
                         <input name="surname" type="text" aria-label="Company name" placeholder="Company name">
                     </div>
-                    <div>
+                    <div class="form-field">
                         <input name="email" type="email" aria-label="email address" placeholder="Email address">
                     </div>
-                    <div>
+                    <div class="form-field">
                         <input name="email" type="tel" aria-label="email address" placeholder="Phone number">
                     </div>
-                    <button>Submit</button>
+                    <button class="btn btn-submit">Submit</button>
                 </form>
             </div>
         </div>
