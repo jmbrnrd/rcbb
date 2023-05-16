@@ -43,8 +43,9 @@ layout: "base.njk"
     </ul>
 </nav>
 <main>
-    <section class="hero" id="top">
-        <div class="grid-wrap section-container">
+    <div id="scroll-watcher"></div>
+    <section class="content-section hero" id="top">
+        <div class="grid-wrap content-container">
             <div>
 {#                <h1 class="display">Create your new specialist hospitality website in under an hour</h1>#}
                 <h1 class="display">Restaurant websites <br>made simple.</h1>
@@ -69,8 +70,8 @@ layout: "base.njk"
             </div>
         </div>
     </section>
-    <section id="overview">
-        <div class="grid-wrap section-container">
+    <section class="content-section" id="overview">
+        <div class="grid-wrap content-container">
             <div>
                 <h2>You focus on the content and <br>we'll handle the rest.</h2>
                 <div class="grid">
@@ -102,20 +103,20 @@ layout: "base.njk"
             </div>
         </div>
     </section>
-    <section id="benefits">
-        <div class="grid-wrap section-container">
-            <h2>Here are some of the common problems that an apptiser websites solves.</h2>
+    <section class="content-section grey" id="benefits">
+        <div class="grid-wrap content-container">
+            <h2>Why apptiser could be the best solution for you.</h2>
             <ul class="grid list">
                 <li>Your website was developed some years ago and could do with a facelift, but you don't have the
                     resources.</li>
                 <li>It's difficult to update your website with new menus, images etc.</li>
                 <li>On some mobile devices your website looks odd, is difficult to use, or just doesn't work.</li>
-                <li>It often takes <a href="#">more than 2 seconds for your website to load</a>.</li>
+                <li>It often takes more than 2 seconds for your website to load.</li>
                 <li>You don't have a budget to future-proof your site, as technology evolves.</li>
                 <li>It's not as easy to access and update your web content as often as you would like.</li>
-                <li>Your website fails to meet basic <a href="#">web accessibility guidelines</a>.</li>
+                <li>Your website fails to meet basic web accessibility guidelines.</li>
                 <li>Your website is not performing very well in web searches.</li>
-                <li>Your website is not on a secure web server, with a current <a href="#">SSL certificate</a>.</li>
+                <li>Your website is not on a secure web server, with a current SSL certificate.</li>
                 <li>Your content doesn't get synchronised across multiple channels.</li>
 
 {#                <p>Built For Hospitality - a fuss-free website to reach more customers</p>#}
@@ -137,8 +138,8 @@ layout: "base.njk"
             </ul>
         </div>
     </section>
-    <section id="pricing" >
-        <div class="grid-wrap section-container">
+    <section class="content-section" id="pricing" >
+        <div class="grid-wrap content-container">
             <h2>We keep pricing simple too.</h2>
 
             <div class="grid">
@@ -149,7 +150,7 @@ layout: "base.njk"
                 solution available to the restaurant and hospitality sector.</p>
             </div>
 
-            <div class="grid-2">
+            <div class="grid-2-col">
 
 
 
@@ -194,8 +195,8 @@ layout: "base.njk"
             </div>
         </div>
     </section>
-    <section id="about" >
-        <div class="grid-wrap section-container">
+    <section class="content-section" id="about" >
+        <div class="grid-wrap content-container">
             <h2>Who we are.</h2>
             <div class="grid">
                 <p>apptiser is created for the hospitality industry by hospitality professionals. Brought to you by the
@@ -210,9 +211,8 @@ layout: "base.njk"
             </div>
         </div>
     </section>
-
-    <section id="contact" >
-        <div class="grid-wrap section-container">
+    <section class="content-section" id="contact" >
+        <div class="grid-wrap content-container">
             <h2>We'd love to talk to you.</h2>
             <div class="grid">
                 <form action="#" class="form-contact">
