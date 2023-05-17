@@ -8,7 +8,7 @@ body {
 
 // Responsive grid layouts
 .grid-wrap {
-  padding: clamp(0rem, $grid-gap, 0rem);
+  padding: clamp(0rem, #{$grid-gap}, 0rem);
 }
 .grid {
   display: grid;
@@ -61,10 +61,10 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: clamp(2rem, 4vw, 10rem);
+  padding: 3rem clamp(1rem, 4vw, 10rem);
   &.hero {
-    align-items: center;
     min-height: 100vh;
+    align-items: center;
     background-color: #000;
     /* background by SVGBackgrounds.com */
     background-image: url("../images/skeleton-ribbon-primary.svg");
@@ -72,9 +72,20 @@ body {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    .content-container {
+      max-width: 1000px;
+    }
   }
   &.grey {
     background-color: #eee;
+  }
+  &.accent {
+    background-color: $clr-accent-100;
+  }
+  &.primary {
+    background-color: $clr-primary-500;
+    color: $clr-accent-500;
+    h2 { color: white;}
   }
 }
 .content-container {
@@ -92,7 +103,7 @@ body {
 
 .product-panel {
   border-radius: 1rem;
-  background-color: #fff;
+  background-color: $clr-accent-100;
   text-align: center;
   padding: 2rem;
   h3 {
@@ -133,9 +144,10 @@ body {
   margin-top: 1rem;
   display: inline-block;
   font-size: $fs-button;
+  font-weight: $fw-semi-bold;
   &:hover,
   &:focus-visible {
-    scale: 1.1;
+    //scale: 1.1;
   }
   &-large {
     background-color: $clr-accent-500;
@@ -162,7 +174,10 @@ body {
 
 
 // Contact form
-.form-contact {
+.form-container {
+  perspective: 1000px;
+}
+.form-contact-front {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -172,6 +187,8 @@ body {
   padding: 1rem .5rem .5rem;
   width: 100%;
   box-shadow: 0 0 30px hsl(0 0% 0% / .1);
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
   .form-field {
     position: relative;
     display: flex;
@@ -197,14 +214,27 @@ body {
       &:focus::placeholder {
         color: $clr-accent-500;
       }
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+        //-webkit-text-fill-color: white !important;
+      }
     }
+
   }
+
   .btn-submit {
-    border-color: transparent;
+    border: 0;
     background-color: $clr-accent-500;
     padding: 1rem;
     border-radius: .6rem;
     margin-top: 2rem;
+    cursor: pointer;
+    transition: background-color 300ms ease-out;
+    &:hover,
+    &:focus-visible {
+      background-color: darken($clr-accent-500, 10);
+      color: white;
+    }
   }
 }
 

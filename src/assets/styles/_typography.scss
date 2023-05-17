@@ -38,10 +38,14 @@ h2 {
   font-size: clamp(1.75rem, 3vw + .5rem, #{$fs-x-large});
   line-height: 1.1;
   margin-bottom: 2rem;
+  font-weight: $fw-semi-bold;
 }
 h3 { font-size: $fs-default; }
 strong { font-weight: $fw-bold; }
-p { font-size: clamp(1rem, 2vw, #{$fs-default}); }
+p {
+  line-height: 1.5;
+  font-size: clamp(1rem, 2vw, #{$fs-default});
+}
 
 .brand {
   font-weight: $fw-semi-bold;

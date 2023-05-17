@@ -10,7 +10,7 @@
   padding: 1rem 1.5rem;
   opacity: 1;
   background-color: transparent;
-  transition: background-color 300ms ease-out;
+  //transition: background-color 300ms ease-out;
 }
 
 .logo {
@@ -49,7 +49,7 @@
   }
 }
 .active {
-  background-color: rgba(#0f2028, 1);
+  background-color: $clr-primary-500;
 }
 
 @media (max-width: 35em) {

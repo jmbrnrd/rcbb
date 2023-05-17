@@ -43,7 +43,6 @@ layout: "base.njk"
     </ul>
 </nav>
 <main>
-    <div id="scroll-watcher"></div>
     <section class="content-section hero" id="top">
         <div class="grid-wrap content-container">
             <div>
@@ -65,6 +64,7 @@ layout: "base.njk"
                     </div>
                 </div>
             </div>
+            <div id="scroll-watcher"></div>
             <div class="content-centred">
                 <a class="btn btn-large" href="#overview">Discover More</a>
             </div>
@@ -103,20 +103,24 @@ layout: "base.njk"
             </div>
         </div>
     </section>
-    <section class="content-section grey" id="benefits">
+    <section class="content-section accent" id="benefits">
         <div class="grid-wrap content-container">
-            <h2>Why apptiser could be the best solution for you.</h2>
+            <h2>An apptiser website is a cost-effective solution to many common problems.</h2>
             <ul class="grid list">
-                <li>Your website was developed some years ago and could do with a facelift, but you don't have the
-                    resources.</li>
-                <li>It's difficult to update your website with new menus, images etc.</li>
-                <li>On some mobile devices your website looks odd, is difficult to use, or just doesn't work.</li>
-                <li>It often takes more than 2 seconds for your website to load.</li>
-                <li>You don't have a budget to future-proof your site, as technology evolves.</li>
-                <li>It's not as easy to access and update your web content as often as you would like.</li>
-                <li>Your website fails to meet basic web accessibility guidelines.</li>
-                <li>Your website is not performing very well in web searches.</li>
+                <li>Your website could do with a facelift, but you don't have the resources.</li>
+                <li>It's not as easy to access and update your content as often as you would like.</li>
+                <li>Visitors often have to wait more than 2 seconds for your website to load.</li>
                 <li>Your website is not on a secure web server, with a current SSL certificate.</li>
+                <li>Your website is not performing very well in web searches.</li>
+                <li>Your website fails to meet basic web accessibility guidelines.</li>
+                <li>On some mobile devices your website looks odd, is difficult to use.</li>
+                <li>You don't have a budget to future-proof your site, as technology evolves.</li>
+                <li>It's difficult to update your website with new menus, images etc.</li>
+
+
+
+
+
                 <li>Your content doesn't get synchronised across multiple channels.</li>
 
 {#                <p>Built For Hospitality - a fuss-free website to reach more customers</p>#}
@@ -199,10 +203,11 @@ layout: "base.njk"
         <div class="grid-wrap content-container">
             <h2>Who we are.</h2>
             <div class="grid">
-                <p>apptiser is created for the hospitality industry by hospitality professionals. Brought to you by the
-                   team that founded Bookatable, the company that brought 'online real-time' bookings to the UK. We have
-                   over 100 years of experience in the industry and understand the challenges facing operators. We are
-                   on a mission to support the growth of hospitality in the UK.</p>
+                <p><strong>apptiser</strong> has been created for the hospitality industry by hospitality
+                    professionals. Brought to you by the team that founded <strong>Bookatable</strong>, the company
+                    that brought 'online real-time' bookings to Europe. We have over 100 years of collective experience
+                    in the industry and a deep understanding of the challenges facing operators. We are on a mission
+                    to support the growth of hospitality in the UK.</p>
 
                 <p>We saw that much of hospitality businesses’ information online is either incorrect or out of date and
                    we wanted to create a solution that provides an easy to use and instantly updatable website at an
@@ -211,28 +216,36 @@ layout: "base.njk"
             </div>
         </div>
     </section>
-    <section class="content-section" id="contact" >
+    <section class="content-section primary" id="contact" >
         <div class="grid-wrap content-container">
-            <h2>We'd love to talk to you.</h2>
             <div class="grid">
-                <form action="#" class="form-contact">
-                    <div class="form-field">
-                        <input name="first name"
-                               type="text"
-                               aria-label="full name"
-                               placeholder="Your full name">
+                <div>
+                    <h2>We'd love to talk to you.</h2>
+                    <p>If you would like to find out if <strong>apptiser</strong> would be an effective solution
+                        for your business, then submit your details and we'll contact you as soon as we can.</p>
+                </div>
+                <div class="form-card">
+                    <div class="form-container">
+                        <form id="contactForm" class="form-contact-front">
+                        <div class="form-field">
+                            <input name="name"
+                                   type="text"
+                                   aria-label="full name"
+                                   placeholder="Your full name">
+                        </div>
+                        <div class="form-field">
+                            <input name="company" type="text" aria-label="Company name" placeholder="Company name">
+                        </div>
+                        <div class="form-field">
+                            <input name="email" type="email" aria-label="email address" placeholder="Email address">
+                        </div>
+                        <div class="form-field">
+                            <input name="phone" type="tel" aria-label="email address" placeholder="Phone number">
+                        </div>
+                        <button class="btn btn-submit">Submit</button>
+                    </form>
                     </div>
-                    <div class="form-field">
-                        <input name="surname" type="text" aria-label="Company name" placeholder="Company name">
-                    </div>
-                    <div class="form-field">
-                        <input name="email" type="email" aria-label="email address" placeholder="Email address">
-                    </div>
-                    <div class="form-field">
-                        <input name="email" type="tel" aria-label="email address" placeholder="Phone number">
-                    </div>
-                    <button class="btn btn-submit">Submit</button>
-                </form>
+                </div>
             </div>
         </div>
     </section>
