@@ -8,7 +8,7 @@
   height: 5rem;
   opacity: 0;
   background-color: $clr-primary-500;
-  transition: opacity 100ms linear;
+  transition: opacity 300ms ease-out;
 }
 .nav-global {
   position: fixed;
@@ -39,7 +39,7 @@
   justify-content: flex-start;
   gap: 1rem;
   list-style: none;
-  width: min(100%, 25em);
+  width: min(100%, 15em);
   padding: clamp(5rem, 15vh, 10rem) 2rem 0 3rem;
   background-color: $clr-primary-500;
   border-radius: 0;
