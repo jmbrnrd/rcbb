@@ -25,18 +25,7 @@ body {
     li {
       border-left: 8px solid rgba($clr-accent-500, .5);
       padding-left: .5rem;
-    }
-
-    //li:before {
-    //  content: '';
-    //  height: 20px;
-    //  aspect-ratio: 1;
-    //  background: url('../images/icon-warn.svg') no-repeat;
-    //  display: inline-block;
-    //  vertical-align: text-top;
-    //  margin-left: -1.75rem;
-    //  margin-right: .5rem;
-    //}
+      font-size: clamp(1rem, 2vw, #{$fs-default}); }
   }
 
   & + .grid {

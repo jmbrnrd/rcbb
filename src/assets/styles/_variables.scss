@@ -5,12 +5,12 @@
   src:  url('../fonts/horizon_type_-_acherusgrotesque-light-webfont.woff2') format('woff2'),
   url('../fonts/horizon_type_-_acherusgrotesque-light-webfont.woff') format('woff');
 }
-@font-face {
-  font-family: 'Acherus';
-  font-weight: 400;
-  src:  url('../fonts/horizon_type_-_acherusgrotesque-regular-webfont.woff2') format('woff2'),
-  url('../fonts/horizon_type_-_acherusgrotesque-regular-webfont.woff') format('woff');
-}
+//@font-face {
+//  font-family: 'Acherus';
+//  font-weight: 400;
+//  src:  url('../fonts/horizon_type_-_acherusgrotesque-regular-webfont.woff2') format('woff2'),
+//  url('../fonts/horizon_type_-_acherusgrotesque-regular-webfont.woff') format('woff');
+//}
 @font-face {
   font-family: 'Acherus';
   font-weight: 500;
@@ -23,12 +23,12 @@
   src:  url('../fonts/horizon_type_-_acherusgrotesque-extrabold-webfont.woff2') format('woff2'),
   url('../fonts/horizon_type_-_acherusgrotesque-extrabold-webfont.woff') format('woff');
 }
-@font-face {
-  font-family: 'Varel';
-  font-weight: 400;
-  src:  url('../fonts/varelaround-regular-webfont.woff2') format('woff2'),
-  url('../fonts/varelaround-regular-webfont.woff') format('woff');
-}
+//@font-face {
+//  font-family: 'Varel';
+//  font-weight: 400;
+//  src:  url('../fonts/varelaround-regular-webfont.woff2') format('woff2'),
+//  url('../fonts/varelaround-regular-webfont.woff') format('woff');
+//}
 
 // fonts
 $ff-primary: Acherus, sans-serif;
