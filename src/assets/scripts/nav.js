@@ -37,6 +37,6 @@ export default function() {
                 ? header.classList.remove('active')
                 : header.classList.add('active');
         });
-    }, { rootMargin: '-200px'} );
+    } );
    observer.observe(document.getElementById('scroll-watcher'));
 }
