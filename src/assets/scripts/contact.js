@@ -1,19 +1,23 @@
 export default function () {
 
+    const api = location.host.includes('localhost')
+        ? 'https://localhost:4000'
+        : 'https://api.restaurantcollective.io' ;
+    console.log(api);
     const form = document.getElementById('contactForm');
-    const userData = Object.fromEntries(new FormData(form));
-    const formObj = Object.assign(userData, {
-        api: 'e21421ieb2l1eb2134g21ieg21be2i1n42432',
-        userCode: 'CF-418-Beta'
-    });
-
-    console.log(formObj);
-
     form.addEventListener('submit', (e) => {
 
         e.preventDefault();
 
-        fetch('https://api.restaurantcollective.io/public/sendbookingemail', {
+        const userData = Object.fromEntries(new FormData(form));
+        const formObj = Object.assign(userData, {
+            api: 'e21421ieb2l1eb2134g21ieg21be2i1n42432',
+            userCode: 'CF-418-Beta'
+        });
+
+        console.log(formObj);
+
+        fetch(`${api}/public/sendcontactfromwebsite`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formObj)

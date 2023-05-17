@@ -5,9 +5,10 @@ export default function() {
     const header = document.getElementById('header');
     const navPanel = document.querySelector('.nav-primary');
     const navBtn = document.getElementById('navButton');
+    const scrollPadding = `${header.offsetHeight - 1}px`
 
     // Adjust scroll-padding to allow for the header
-    document.documentElement.style.setProperty('--scroll-padding', `${header.offsetHeight}px`);
+    document.documentElement.style.setProperty('--scroll-padding', scrollPadding);
 
     // Menu button
     navBtn.addEventListener('click', openNavigation);

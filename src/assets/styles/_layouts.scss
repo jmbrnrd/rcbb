@@ -8,7 +8,7 @@ body {
 
 // Responsive grid layouts
 .grid-wrap {
-  padding: clamp(0rem, #{$grid-gap}, 0rem);
+  //padding: clamp(0rem, #{$grid-gap}, 0rem);
 }
 .grid {
   display: grid;
@@ -50,11 +50,12 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 3rem clamp(1rem, 4vw, 10rem);
   &.hero {
     min-height: 100vh;
     align-items: center;
-    background-color: #000;
+    background-color: $clr-primary-500;
     /* background by SVGBackgrounds.com */
     background-image: url("../images/skeleton-ribbon-primary.svg");
     background-attachment: fixed;
@@ -62,7 +63,9 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     .content-container {
+      margin: auto;
       max-width: 1000px;
+      padding: 0;
     }
   }
   &.grey {
@@ -78,16 +81,10 @@ body {
   }
 }
 .content-container {
+  padding: min(2rem, 5vw) 0 15rem;
   width: min(100% - #{$layout-margin}, #{$layout-max-width});
   margin-inline: auto;
 
-}
-.flex {
-  display: flex;
-}
-
-.shiftUp10 {
-  transform: translateY(-10vh)
 }
 
 .product-panel {
@@ -122,6 +119,11 @@ body {
   }
 }
 
+.footer-panel {
+  font-size: $fs-small;
+  margin-top: 5rem;
+}
+
 .btn {
   border-color: transparent;
   border-radius: 10rem;
@@ -141,14 +143,12 @@ body {
   &-large {
     background-color: $clr-accent-500;
     padding: 1rem 1.5rem;
-    font-size: $fs-button;
+    font-size: $fs-default;
     font-weight: $fw-semi-bold;
     color: $clr-primary-500;
   }
   &-med {
     background-color: $clr-accent-500;
-    padding: 1rem 1.5rem;
-    font-size: $fs-button;
     font-weight: $fw-semi-bold;
     color: $clr-primary-500;
   }
@@ -226,6 +226,9 @@ body {
     }
   }
 }
+
+
+
 
 
 

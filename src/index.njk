@@ -2,7 +2,8 @@
 title: "apptiser.io"
 layout: "base.njk"
 ---
-<header class="nav-global flex" id="header">
+<header class="nav-global-bgd" id="header"></header>
+<div class="nav-global">
     <a class="logo" href="#top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 323 66" class="logo-apptiser">
             <g fill-rule="evenodd">
@@ -16,7 +17,7 @@ layout: "base.njk"
           <span class="hamburger-inner"></span>
         </span>
     </button>
-</header>
+</div>
 <nav>
     <ul class="nav-primary flex" aria-expanded="false">
         <li>
@@ -64,10 +65,10 @@ layout: "base.njk"
                     </div>
                 </div>
             </div>
-            <div id="scroll-watcher"></div>
             <div class="content-centred">
                 <a class="btn btn-large" href="#overview">Discover More</a>
             </div>
+            <div id="scroll-watcher"></div>
         </div>
     </section>
     <section class="content-section" id="overview">
@@ -77,7 +78,7 @@ layout: "base.njk"
                 <div class="grid">
 
                     <p><strong>apptiser</strong> is a ready-made, customisable website that has been designed
-                        specifically to meet the requirements of the restaurant and hospitality industry and
+                        specifically to meet the requirements of the restaurant and hospitality industry, and
                        to present your content in the best possible light, on any device.</p>
                     <p><strong>apptiser</strong> has been developed by industry specialists to meet the growing expectations of your
                        guests and to deliver the best performance standards in speed, search engine optimisation (SEO)
@@ -100,12 +101,13 @@ layout: "base.njk"
 {#                       out.#}
 {#                    </p>#}
                 </div>
+
             </div>
         </div>
     </section>
     <section class="content-section accent" id="benefits">
         <div class="grid-wrap content-container">
-            <h2>An apptiser website is a cost-effective solution to many common problems.</h2>
+            <h2>apptiser is a cost-effective solution for many common issues.</h2>
             <ul class="grid list">
                 <li>Your website could do with a facelift, but you don't have the resources.</li>
                 <li>It's not as easy to access and update your content as often as you would like.</li>
@@ -113,9 +115,9 @@ layout: "base.njk"
                 <li>Your website is not on a secure web server, with a current SSL certificate.</li>
                 <li>Your website is not performing very well in web searches.</li>
                 <li>Your website fails to meet basic web accessibility guidelines.</li>
-                <li>On some mobile devices your website looks odd, is difficult to use.</li>
-                <li>You don't have a budget to future-proof your site, as technology evolves.</li>
-                <li>It's difficult to update your website with new menus, images etc.</li>
+                <li>On some mobile devices your website looks odd, or is difficult to use.</li>
+                <li>You don't have a budget to continually update your site, as technology evolves.</li>
+                <li>It takes more than a few minutes to publish your new menus, or add new images.</li>
 
 
 
@@ -144,7 +146,7 @@ layout: "base.njk"
     </section>
     <section class="content-section" id="pricing" >
         <div class="grid-wrap content-container">
-            <h2>We keep pricing simple too.</h2>
+            <h2>Our pricing is simple too.</h2>
 
             <div class="grid">
 
@@ -204,12 +206,16 @@ layout: "base.njk"
             <h2>Who we are.</h2>
             <div class="grid">
                 <p><strong>apptiser</strong> has been created for the hospitality industry by hospitality
-                    professionals. Brought to you by the team that founded <strong>Bookatable</strong>, the company
-                    that brought 'online real-time' bookings to Europe. We have over 100 years of collective experience
-                    in the industry and a deep understanding of the challenges facing operators. We are on a mission
-                    to support the growth of hospitality in the UK.</p>
+                    professionals and is brought to you by the team that founded
+                    <strong>Livebookings/Bookatable</strong>, the company that first developed real-time online
+                    bookings in Europe. With over 100 years of collective experience successfully providing
+                    technology within the hospitality sector, we have gained a deep understanding
+                    of the unique challenges that face today's operators.</p>
 
-                <p>We saw that much of hospitality businesses’ information online is either incorrect or out of date and
+                <p>We are
+                   on a mission
+                   to support the growth of hospitality in the UK. We saw that much of hospitality businesses’
+                   information online is either incorrect or out of date and
                    we wanted to create a solution that provides an easy to use and instantly updatable website at an
                    affordable price.</p>
 
@@ -222,29 +228,38 @@ layout: "base.njk"
                 <div>
                     <h2>We'd love to talk to you.</h2>
                     <p>If you would like to find out if <strong>apptiser</strong> would be an effective solution
-                        for your business, then submit your details and we'll contact you as soon as we can.</p>
+                        for your business, then us your details using the form, or email us directly, and we'll
+                       contact you as soon as we can.</p>
                 </div>
                 <div class="form-card">
                     <div class="form-container">
                         <form id="contactForm" class="form-contact-front">
                         <div class="form-field">
-                            <input name="name"
+                            <input name="contact_name"
                                    type="text"
                                    aria-label="full name"
                                    placeholder="Your full name">
                         </div>
                         <div class="form-field">
-                            <input name="company" type="text" aria-label="Company name" placeholder="Company name">
+                            <input name="contact_company" type="text" aria-label="Company name" placeholder="Company name">
                         </div>
                         <div class="form-field">
-                            <input name="email" type="email" aria-label="email address" placeholder="Email address">
+                            <input name="contact_email" type="email" aria-label="email address" placeholder="Email address">
                         </div>
                         <div class="form-field">
-                            <input name="phone" type="tel" aria-label="email address" placeholder="Phone number">
+                            <input name="contact_phone" type="tel" aria-label="email address" placeholder="Phone number">
                         </div>
                         <button class="btn btn-submit">Submit</button>
                     </form>
                     </div>
+                </div>
+            </div>
+            <div class="grid-wrap">
+                <div class="grid footer-panel">
+                    <address>
+                        RDL
+                        Address 1
+                    </address>
                 </div>
             </div>
         </div>
