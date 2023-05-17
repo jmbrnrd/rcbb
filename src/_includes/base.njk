@@ -7,6 +7,10 @@
 
 	{% include 'partials/schema.njk' %}
 
+	<link rel="icon" href="{{ 'assets/images/favicon.svg' | url }}">
+	<link rel="apple-touch-icon" href="{{ 'assets/images/apple-touch-icon.png' | url }}">
+	<link rel="manifest" href="{{ 'assets/manifest.json' | url }}">
+
 	<base href="/">
 	<link rel="stylesheet" href="{{ 'assets/styles/style.css' | url }}" />
 	<script src="{{ 'assets/scripts/main.js' | url }}" type="module" defer></script>

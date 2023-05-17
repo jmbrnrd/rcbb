@@ -29,7 +29,15 @@ module.exports = function (config) {
   config.addWatchTarget('./src/assets/scripts/');
   config.addPassthroughCopy("./src/assets/fonts/");
   config.addPassthroughCopy("./src/assets/images/");
+  config.addPassthroughCopy("./src/assets/*.json");
+  config.addPassthroughCopy("./tls/");
   config.addPlugin(eleventySass);
+  // config.setServerOptions({
+  //   https: {
+  //     key: "tls/localhost-key.pem",
+  //     cert: "tls/localhost-cert.pem"
+  //   }
+  // });
 
   return {
     templateFormats: ['md', 'njk'],
