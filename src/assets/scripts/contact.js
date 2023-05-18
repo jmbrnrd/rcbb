@@ -38,6 +38,9 @@ export default function () {
             })
             .catch(error => {
                 console.log(`Error: ${error}`);
+                alert('Sorry, but something went wrong, please try submitting your details again.')
+                btnSubmit.disabled = false;
+                btnSubmit.innerHTML = 'SUBMIT AGAIN';
             });
     });
 
