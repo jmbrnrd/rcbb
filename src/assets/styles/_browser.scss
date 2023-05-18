@@ -1,13 +1,9 @@
-$dot-size: 12px;
-$ratio-mobile: 16/9 * 100%;
-$ratio-screen: 9/16 * 100%;
 
 .browser-container {
   margin-top: 3rem;
   margin-inline: auto;
   display: grid;
   place-content: center;
-  //width: 900px;
 }
 .browser {
   width: min(80vw, 900px);
@@ -22,7 +18,7 @@ $ratio-screen: 9/16 * 100%;
     align-items: center;
     padding: 1rem;
     .dot {
-      height: $dot-size;
+      height: 12px;
       aspect-ratio: 1;
       //background-color: red;
       border-radius: 50%;
@@ -37,7 +33,7 @@ $ratio-screen: 9/16 * 100%;
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: $ratio-mobile; //56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: calc(16 / 9 * 100%); //56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
   iframe {
     position: absolute;
@@ -53,6 +49,6 @@ $ratio-screen: 9/16 * 100%;
 }
 @media (min-width: 35em) {
   .browser .window {
-    padding-top: $ratio-screen;
+    padding-top: calc(9 / 16 * 100%);
   }
 }
