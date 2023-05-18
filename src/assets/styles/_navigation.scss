@@ -55,6 +55,9 @@
       &:hover,
       &:focus-visible {
         color: white;
+        &:after {
+          content: '.';
+        }
       }
     }
   }

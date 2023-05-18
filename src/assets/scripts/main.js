@@ -1,6 +1,8 @@
-console.log('main.js loaded');
+
 import nav from './nav';
-import contact from "./contact";
+import contact from './contact';
+import animate from './animations';
 
 nav();
 contact();
+animate();

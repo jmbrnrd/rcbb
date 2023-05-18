@@ -47,6 +47,9 @@ svg {
   max-width: 100%;
   display: block;
 }
+*:focus {
+  outline: none;
+}
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
