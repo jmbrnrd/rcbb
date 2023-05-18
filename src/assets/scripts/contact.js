@@ -1,5 +1,6 @@
 export default function () {
     const api = 'https://api.restaurantcollective.io';
+    const btnSubmit = document.getElementById('btnSubmit')
     console.log(`API ${api}`);
     // grab form
     const form = document.getElementById('contactForm');
@@ -7,6 +8,9 @@ export default function () {
     form.addEventListener('submit', (e) => {
 
         e.preventDefault();
+
+        sending();
+
         // get key/value pairs
         const userData = Object.fromEntries(new FormData(form));
         // Add the keys
@@ -30,12 +34,23 @@ export default function () {
                     return Promise.reject(error);
                 }
                 // display success
-                console.log(response);
+                success(response);
             })
             .catch(error => {
                 console.log(`Error: ${error}`);
             });
     });
+
+    function sending() {
+        btnSubmit.innerHTML = 'SENDING';
+        btnSubmit.disabled = true;
+    }
+    function success() {
+        btnSubmit.style.backgroundColor = '#8dd910';
+        btnSubmit.style.color = '#000';
+        btnSubmit.innerHTML = "Ok, we'll be in touch.";
+    }
+
 
 }
 

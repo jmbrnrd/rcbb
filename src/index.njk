@@ -229,37 +229,7 @@ layout: "base.njk"
                 </div>
                 <div class="form-card entry scale-up">
                     <div class="form-container">
-                        <form id="contactForm" class="form-contact-front">
-                        <div class="form-field">
-                            <input name="contact_name"
-                                   type="text"
-                                   required
-                                   aria-label="full name"
-                                   placeholder="Your full name">
-                        </div>
-                        <div class="form-field">
-                            <input name="contact_company"
-                                   type="text"
-                                   aria-label="Company name"
-                                   required
-                                   placeholder="Company name">
-                        </div>
-                        <div class="form-field">
-                            <input name="contact_email"
-                                   type="email"
-                                   aria-label="email address"
-                                   required
-                                   placeholder="Email address">
-                        </div>
-                        <div class="form-field">
-                            <input name="contact_phone"
-                                   type="tel"
-                                   aria-label="email address"
-                                   placeholder="Phone number">
-                        </div>
-                        <button class="btn btn-submit"
-                                aria-label="Submit your contact details">Submit</button>
-                    </form>
+                        {% include 'partials/contact.njk' %}
                     </div>
                 </div>
             </div>
