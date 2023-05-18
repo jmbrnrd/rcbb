@@ -9,16 +9,13 @@ body {
 // Responsive grid layouts
 .grid-wrap {
   width: 100%;
-  //padding: clamp(0rem, #{$grid-gap}, 0rem);
 }
 .grid {
   display: grid;
   column-gap: $grid-gap;
   row-gap: 1rem;
   list-style: none;
-
-  /* min() with 100% prevents overflow
-  in extra narrow spaces */
+  /* min() with 100% prevents overflow in extra narrow spaces */
   grid-template-columns: repeat(auto-fit, minmax(min(100%, #{$grid-min-col-width}), 1fr));
 
   &.list {
@@ -29,7 +26,6 @@ body {
       color: $clr-primary-500;
       font-size: clamp(1rem, 2vw, #{$fs-default}); }
   }
-
   & + .grid {
     margin-top: $grid-gap;
   }
@@ -127,11 +123,6 @@ body {
   }
 }
 
-.footer-panel {
-  font-size: $fs-small;
-  margin-top: 5rem;
-}
-
 .btn {
   border-color: transparent;
   border-radius: 10rem;
@@ -171,7 +162,6 @@ body {
   margin: 2rem auto;
 }
 
-
 // Contact form
 .form-container {
   perspective: 1000px;
@@ -210,17 +200,10 @@ body {
       letter-spacing: 1px;
       font-weight: $fw-semi-bold;
       outline: none;
-      &:focus::placeholder {
-        color: $clr-accent-500;
-      }
-      &:-webkit-autofill {
-        -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
-        //-webkit-text-fill-color: white !important;
-      }
+      &:focus::placeholder { color: $clr-accent-500; }
+      &:-webkit-autofill { -webkit-box-shadow: 0 0 0 1000px #fff inset !important; }
     }
-
   }
-
   .btn-submit {
     border: 0;
     background-color: $clr-accent-500;
@@ -242,9 +225,6 @@ body {
   color: $clr-accent-500;
   font-size: $fs-small;
   h3 {
-    //font-family: SFUIText, 'acherus', sans-serif;
-    //font-size: 12px;
-    //font-weight: 300;
     font-size: $fs-small;
     letter-spacing: 2px;
     border-bottom: 1px dotted rgba($clr-accent-500, .75);
@@ -266,35 +246,24 @@ body {
     color: inherit;
     opacity: .8;
     transition: color .3s ease;
-    &:hover {
+    &:hover,
+    &:focus-visible {
       color: white;
     }
   }
   address {
     font-style: normal;
     white-space: pre-line;
-    //margin-bottom: 1em;
   }
-  p { font-size: inherit; margin-top: .5em;}
+  p {
+    font-size: inherit;
+    margin-top: .5em;
+  }
 }
 
-
+// Media queries
 @media (min-width: 50em) {
  .footer .footer-content {
     grid-template-columns: 2fr 1fr;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

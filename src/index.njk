@@ -12,39 +12,39 @@ layout: "base.njk"
             </g>
         </svg>
     </a>
-    <button class="hamburger hamburger--spin" type="button" title="MENU" id="navButton">
+    <button class="hamburger hamburger--spin" type="button" aria-label="MENU" id="navButton">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
     </button>
 </div>
-<nav>
-    <ul class="nav-primary flex" aria-expanded="false">
+<nav aria-label="primary navigation">
+    <ul class="nav-primary" aria-expanded="false">
         <li>
-            <a href="#overview" title="A summary of the apptiser website product">Overview</a>
+            <a href="#overview" aria-label="A summary of the apptiser website product">Overview</a>
         </li>
         <li>
-            <a href="#benefits" title="Details of the solutions addressed by apptiser">Benefits</a>
+            <a href="#benefits" aria-label="Details of the solutions addressed by apptiser">Benefits</a>
         </li>
         <li>
-            <a href="#pricing" title="Pricing details">Pricing</a>
+            <a href="#pricing" aria-label="Pricing details">Pricing</a>
         </li>
         <li>
-            <a href="#about" title="About th team behind apptiser">About</a>
+            <a href="#about" aria-label="About the team behind apptiser">About</a>
         </li>
         <li>
-            <a href="#contact" title="Contact the apptiser team">Contact</a>
+            <a href="#contact" aria-label="Contact the apptiser team">Contact</a>
         </li>
         <li>
-            <a href="https://beta.apptiser.io/join" title="Create an apptiser account">Get Started</a>
+            <a href="https://beta.apptiser.io/join" aria-label="Create an apptiser account">Get Started</a>
         </li>
         <li>
-            <a href="https://beta.apptiser.io/signin" title="Login to your apptiser account">Login</a>
+            <a href="https://beta.apptiser.io/signin" aria-label="Login to your apptiser account">Login</a>
         </li>
     </ul>
 </nav>
 <main>
-    <section class="content-section hero entry-group" id="top">
+    <section class="content-section hero entry-group">
         <div class="grid-wrap content-container">
             <div>
 {#                <h1 class="display">Create your new specialist hospitality website in under an hour</h1>#}
@@ -107,6 +107,7 @@ layout: "base.njk"
             </div>
         </div>
     </section>
+
     <section class="content-section accent" id="benefits">
         <div class="grid-wrap content-container">
             <h2><strong>apptiser</strong> provides a cost-effective solution <br>for many common issues.</h2>
@@ -142,6 +143,7 @@ layout: "base.njk"
             </ul>
         </div>
     </section>
+
     <section class="content-section" id="pricing" >
         <div class="grid-wrap content-container">
             <h2>Our pricing is simple too.</h2>
@@ -194,6 +196,7 @@ layout: "base.njk"
             </div>
         </div>
     </section>
+
     <section class="content-section" id="about" >
         <div class="grid-wrap content-container">
             <h2>Who we are.</h2>
@@ -214,9 +217,10 @@ layout: "base.njk"
             </div>
         </div>
     </section>
+
     <section class="content-section contact entry-group" id="contact" >
         <div class="grid-wrap content-container">
-            <div class="grid entry slide-up">
+            <div class="grid">
                 <div>
                     <h2>We'd love to talk to you.</h2>
                     <p>If you would like to find out if <strong>apptiser</strong> would be an effective solution
@@ -229,6 +233,7 @@ layout: "base.njk"
                         <div class="form-field">
                             <input name="contact_name"
                                    type="text"
+                                   required
                                    aria-label="full name"
                                    placeholder="Your full name">
                         </div>
@@ -236,12 +241,14 @@ layout: "base.njk"
                             <input name="contact_company"
                                    type="text"
                                    aria-label="Company name"
+                                   required
                                    placeholder="Company name">
                         </div>
                         <div class="form-field">
                             <input name="contact_email"
                                    type="email"
                                    aria-label="email address"
+                                   required
                                    placeholder="Email address">
                         </div>
                         <div class="form-field">
@@ -251,7 +258,7 @@ layout: "base.njk"
                                    placeholder="Phone number">
                         </div>
                         <button class="btn btn-submit"
-                                title="Submit your contact details">Submit</button>
+                                aria-label="Submit your contact details">Submit</button>
                     </form>
                     </div>
                 </div>
@@ -267,18 +274,18 @@ layout: "base.njk"
                 Kineton House, 31 Horse Fair, Banbury
                 Oxfordshire OX16 0AE
             </address>
-            <p>Email: <a href="mailto:info@apptiser.io" title="Send an email to the apptiser team">
+            <p>Email: <a href="mailto:info@apptiser.io" aria-label="Send an email to the apptiser team">
             info@apptiser.io</a></p>
             <p>© {% year %} Restaurant Developments Ltd. Registered company number 07419859.</p>
         </div>
         <div>
             <h3>CONTENT LINKS</h3>
             <ul role="list">
-                <li><a href="/" title="Return to the top">Back to top</a></li>
-                <li><a href="#overview" title="A product summary">Overview</a></li>
-                <li><a href="#benefits" title="Key benefits of apptiser">Benefits</a></li>
-                <li><a href="#pricing" title="apptiser pricing details">Pricing</a></li>
-                <li><a href="#about" title="About the apptiser team">About</a></li>
+                <li><a href="/" aria-label="Return to the top">Back to top</a></li>
+                <li><a href="#overview" aria-label="A product summary">Overview</a></li>
+                <li><a href="#benefits" aria-label="Key benefits of apptiser">Benefits</a></li>
+                <li><a href="#pricing" aria-label="apptiser pricing details">Pricing</a></li>
+                <li><a href="#about" aria-label="About the apptiser team">About</a></li>
             </ul>
         </div>
     </div>

@@ -1,21 +1,21 @@
 export default function () {
-
-    const api = location.host.includes('localhost')
-        ? 'https://localhost:4000'
-        : 'https://api.restaurantcollective.io' ;
-    console.log(api);
+    const api = 'https://api.restaurantcollective.io';
+    console.log(`API ${api}`);
+    // grab form
     const form = document.getElementById('contactForm');
+    // on submit
     form.addEventListener('submit', (e) => {
 
         e.preventDefault();
-
+        // get key/value pairs
         const userData = Object.fromEntries(new FormData(form));
+        // Add the keys
         const formObj = Object.assign(userData, {
-            api: 'e21421ieb2l1eb2134g21ieg21be2i1n42432',
-            userCode: 'CF-418-Beta'
+            api_key: 'e21421ieb2l1eb2134g21ieg21be2i1n42432',
+            user_code: 'CF-418-apptiser'
         });
 
-        console.log(formObj);
+        //console.log(formObj);
 
         fetch(`${api}/public/sendcontactfromwebsite`, {
             method: 'POST',
@@ -30,7 +30,7 @@ export default function () {
                     return Promise.reject(error);
                 }
                 // display success
-                //dspModalMessage();
+                console.log(response);
             })
             .catch(error => {
                 console.log(`Error: ${error}`);

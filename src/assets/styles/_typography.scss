@@ -1,10 +1,7 @@
 
 @use 'variables' as *;
 
-
-html {
-  font-size: 100%;
-}
+html { font-size: 100%; }
 body {
   font-size: $fs-default;
   font-family: $ff-primary;
@@ -26,7 +23,6 @@ h1, h2, h3 {
   color: white;
   line-height: 1.05;
   &-copy {
-    //margin-top: 2rem;
     font-size: clamp(1rem,1vw + 1rem, 1.5rem);
     line-height: 1.5;
     color: $clr-accent-500;
@@ -46,7 +42,6 @@ p {
   line-height: 1.5;
   font-size: clamp(1rem, 2vw, #{$fs-default});
 }
-
 .brand {
   font-weight: $fw-semi-bold;
   color: $clr-accent-alt-500;
