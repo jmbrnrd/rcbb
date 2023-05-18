@@ -69,7 +69,7 @@ body {
     }
   }
   &.grey {
-    background-color: #eee;
+    background-color: $clr-grey-100;
   }
   &.accent {
     background-color: $clr-accent-100;
@@ -86,11 +86,14 @@ body {
     h2 { color: white;}
   }
 }
+//
 .content-container {
   padding: min(2rem, 5vw) 0 5rem;
   //max-width: $layout-max-width;
   margin-inline: auto;
-
+  &.constrained {
+    max-width: 1200px;
+  }
 }
 
 // pricing
@@ -167,6 +170,7 @@ body {
 // Contact form
 .form-container {
   perspective: 1000px;
+
 }
 .form-contact-front {
   position: relative;

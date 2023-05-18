@@ -74,11 +74,12 @@ layout: "base.njk"
         </div>
     </section>
 
-    <section class="content-section" id="overview">
+    <section class="content-section accent" id="overview">
         <div class="grid-wrap content-container">
             <div>
                 <h2>You focus on the content and <br>we'll handle the rest.</h2>
                 <div class="grid">
+
                     <p><strong>apptiser</strong> is a ready-made, customisable website that has been designed
                         specifically to meet the requirements of the restaurant and hospitality industry, and
                        to present your content in the best possible light, on any device.</p>
@@ -105,10 +106,11 @@ layout: "base.njk"
                 </div>
 
             </div>
+            {%  include 'partials/browser.njk' %}
         </div>
     </section>
 
-    <section class="content-section accent" id="benefits">
+    <section class="content-section " id="benefits">
         <div class="grid-wrap content-container">
             <h2><strong>apptiser</strong> provides a cost-effective solution <br>for many common issues.</h2>
             <ul class="grid list">
@@ -219,7 +221,7 @@ layout: "base.njk"
     </section>
 
     <section class="content-section contact entry-group" id="contact" >
-        <div class="grid-wrap content-container">
+        <div class="grid-wrap content-container constrained">
             <div class="grid">
                 <div>
                     <h2>We'd love to talk to you.</h2>
