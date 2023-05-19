@@ -16,14 +16,15 @@
     height: 12px;
     background-color: rgb(54, 56, 58);;
     align-items: center;
-    padding: 1rem;
+    padding: 1.25rem 1rem;
     .dot {
-      height: 12px;
+      height: 14px;
       aspect-ratio: 1;
       //background-color: red;
       border-radius: 50%;
       display: inline-block;
-      margin-right: 3px;
+      margin-right: 5px;
+      border: 1px solid #333;
       &.red { background-color: #ff5f56; }
       &.yellow { background-color: #ffc343; }
       &.green { background-color: #32a852; }

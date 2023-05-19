@@ -12,7 +12,7 @@ layout: "base.njk"
             </g>
         </svg>
     </a>
-    <button class="hamburger hamburger--spin" type="button" aria-label="MENU" id="navButton">
+    <button class="hamburger hamburger--spin" type="button" aria-label="Navigation menu" id="navButton">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
@@ -21,25 +21,25 @@ layout: "base.njk"
 <nav aria-label="primary navigation">
     <ul class="nav-primary" aria-expanded="false">
         <li>
-            <a href="#overview" aria-label="A summary of the apptiser website product">Overview</a>
+            <a href="#overview" class="nav-link" aria-label="A summary of the apptiser website product">Overview</a>
         </li>
         <li>
-            <a href="#benefits" aria-label="Details of the solutions addressed by apptiser">Benefits</a>
+            <a href="#benefits" class="nav-link" aria-label="Details of the solutions addressed by apptiser">Benefits</a>
         </li>
         <li>
-            <a href="#pricing" aria-label="Pricing details">Pricing</a>
+            <a href="#pricing" class="nav-link" aria-label="Pricing details">Pricing</a>
         </li>
         <li>
-            <a href="#about" aria-label="About the team behind apptiser">About</a>
+            <a href="#about" class="nav-link" aria-label="About the team behind apptiser">About</a>
         </li>
         <li>
-            <a href="#contact" aria-label="Contact the apptiser team">Contact</a>
+            <a href="#contact" class="nav-link" aria-label="Contact the apptiser team">Contact</a>
         </li>
         <li>
-            <a href="https://beta.apptiser.io/join" aria-label="Create an apptiser account">Get Started</a>
+            <a href="https://beta.apptiser.io/join" class="nav-link" aria-label="Create an apptiser account">Get Started</a>
         </li>
         <li>
-            <a href="https://beta.apptiser.io/signin" aria-label="Login to your apptiser account">Login</a>
+            <a href="https://beta.apptiser.io/signin" class="nav-link" aria-label="Login to your apptiser account">Login</a>
         </li>
     </ul>
 </nav>
@@ -66,14 +66,13 @@ layout: "base.njk"
             </div>
             <div id="scroll-watcher"></div>
             <div class="content-centred entry scale-up">
-                <a class="btn btn-large" href="#overview" title="More information about the apptiser product">Discover
-                    More</a>
+                <a class="btn btn-large" href="#overview" aria-label="More information about the apptiser product">Discover More</a>
             </div>
         </div>
     </section>
 
     <section class="content-section accent" id="overview">
-        <div class="grid-wrap content-container">
+        <div class="grid-wrap content-container entry-group">
             <div>
                 <h2>You focus on the <strong>content</strong> and <br>we'll handle the rest.</h2>
                 <div class="grid">
@@ -89,11 +88,12 @@ layout: "base.njk"
                     </p>
                 </div>
             </div>
-            {%  include 'partials/browser.njk' %}
+            {% include 'partials/browser.njk' %}
+            {% include 'partials/signup-button.njk' %}
         </div>
     </section>
 
-    <section class="content-section " id="benefits">
+    <section class="content-section entry-group " id="benefits">
         <div class="grid-wrap content-container">
             <h2><strong>apptiser</strong> provides a cost-effective solution <br>to many common issues.</h2>
             <ul class="grid list">
@@ -109,11 +109,12 @@ layout: "base.njk"
                 <li>It takes more than a couple of minutes to update your menus, or add new images etc.</li>
                 <li>Your content doesn't get synchronised across multiple channels.</li>
             </ul>
+            {% include 'partials/signup-button.njk' %}
         </div>
     </section>
 
     <section class="content-section" id="pricing" >
-        <div class="grid-wrap content-container constrained">
+        <div class="grid-wrap content-container constrained entry-group">
             <h2>Our pricing is simple too.</h2>
             <div class="grid">
                 <p>No long-term contracts or additional maintenance or hosting charges, just a single monthly
@@ -147,46 +148,42 @@ layout: "base.njk"
                        href="https://beta.apptiser.io/join"
                        aria-label="apptiser Premium will be available shortly">Available
                         soon</a>
+                    <p style="margin-top: 1rem;">All the features of <strong>apptiser Standard</strong> plus:</p>
                     <ul class="product-features">
-                        <li>Monthly contract (cancel anytime)</li>
-                        <li>Secure Web hosting</li>
-                        <li>Pre-designed template</li>
-                        <li>Custom colours</li>
-                        <li>Self-managed content</li>
-                        <li>24/7 Access via any device</li>
-                        <li>Image gallery</li>
-                        <li>HTML Menu builder</li>
-                        <li>PDF Menu downloads</li>
-                        <li>Network content distribution</li>
-                        <li>3 Dedicated email accounts</li>
-                        <li>Real-time online bookings*</li>
-                        <li>Bookings directly from your Google, Facebook & Instagram accounts*</li>
+                        <li>3 Email accounts at your custom domain</li>
+                        <li>Real-time online booking widget</li>
+                        <li>Bookings directly from your Google, Facebook & Instagram accounts</li>
+                        <li>Synchronised updates to Google, Facebook & Instagram</li>
                     </ul>
+                    <p class="txt-small">Real-time bookings require a compatible reservations management solution. <a
+                    href="#contact" class="inline" aria-label="Jump to the contact form">Contact us</a> for information
+                    about which systems are currently integrated.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="content-section" id="about" >
-        <div class="grid-wrap content-container">
+        <div class="grid-wrap content-container entry-group">
             <h2>Who we are.</h2>
             <div class="grid">
                 <p><strong>apptiser</strong> has been created for the hospitality industry by hospitality
-                    professionals and is brought to you by the team that founded
-                    <strong>Livebookings/Bookatable</strong>, the company that first developed real-time online
-                    bookings in Europe. With over 100 years of collective experience successfully providing
-                    technology within the hospitality sector, we have gained a deep understanding
-                    of the unique challenges that face today's operators.</p>
+                professionals and is brought to you by the team that founded
+                <strong>Livebookings/Bookatable</strong>, the company that first developed real-time online
+                bookings in Europe. With over 100 years of collective experience successfully providing
+                technology within the hospitality sector, we have gained a deep understanding
+                of the unique challenges that face today's operators.</p>
                 <p>We are on a mission to support the growth of hospitality in the UK. We saw that much of
-                    hospitality businesses’ information online is either incorrect or out of date and
-                   we wanted to create a solution that provides an easy to use and instantly updatable website at an
-                   affordable price.</p>
+                 hospitality businesses’ information online is either incorrect or out of date and
+                 we wanted to create a solution that provides an easy to use and instantly updatable website at an
+                 affordable price.</p>
             </div>
+            {% include 'partials/signup-button.njk' %}
         </div>
     </section>
 
-    <section class="content-section contact entry-group" id="contact" >
-        <div class="grid-wrap content-container constrained">
+    <section class="content-section contact" id="contact" >
+        <div class="grid-wrap content-container constrained entry-group">
             <div class="grid">
                 <div>
                     <h2>We'd love to talk to you.</h2>
