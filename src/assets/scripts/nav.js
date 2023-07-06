@@ -11,6 +11,7 @@ export default function() {
     document.documentElement.style.setProperty('--scroll-padding', scrollPadding);
 
     // Menu button
+
     navBtn.addEventListener('click', openNavigation);
     // Navigation panel
     navPanel.addEventListener('click', closeNavigation);

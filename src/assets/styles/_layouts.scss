@@ -48,6 +48,7 @@ body {
 .content-section {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 3rem clamp(2rem, 4vw, 10rem);
@@ -144,11 +145,11 @@ body {
   transition: background-color, color 300ms ease-out;
   &:hover,
   &:focus-visible {
-    background-color: darken($clr-accent-500, 15);
+    background-color: darken($clr-primary-500, 15);
     color: white;
   }
   &-large {
-    background-color: $clr-accent-500;
+    background-color: $clr-accent-alt-500;
     padding: 1rem 1.675rem;
     font-size: $fs-default;
     font-weight: $fw-semi-bold;
@@ -278,3 +279,44 @@ body {
     grid-template-columns: 2fr 1fr;
   }
 }
+
+// BII Promo
+.promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: $clr-primary-500;
+  font-size: clamp(1.5rem, 1.5vw + .5rem, #{$fs-x-large});
+  text-align: center;
+}
+.accent {
+  .promo {
+    color: $clr-primary-500;
+  }
+}
+.hero {
+  .promo {
+    color: white;
+  }
+}
+
+.promo {
+  h2.code {
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    color: red;
+
+  }
+}
+.img-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  img {
+    max-height: 320px;
+
+    object-fit: cover;
+  }
+}
+
