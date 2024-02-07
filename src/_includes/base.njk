@@ -3,19 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="apptiser is a cost-effect, templated website solution and CMS for restaurants and
-	hospitality business">
+	<meta name="description" content="The Redstone Community Big Band is an amateur band that plays classic big band jazz and swing.">
 
 	<title>{{ title }}</title>
 
 	{% include 'partials/schema.njk' %}
 
-	<link rel="icon" href="{{ '/assets/images/favicon.svg' | url }}">
-	<link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | url }}">
-	<link rel="manifest" href="{{ '/assets/manifest.json' | url }}">
+	{% include 'partials/favicons.njk' %}
 
 	<base href="/">
-	<link rel="stylesheet" href="{{ 'assets/styles/style.css' | url }}" />
+	<link rel="stylesheet" href="{{ '/assets/styles/style.css' | url }}" />
 	<script src="{{ '/assets/scripts/main.js' | url }}" type="module" defer></script>
 
 	{% include 'partials/gtag.njk' %}
