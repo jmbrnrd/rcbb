@@ -7,7 +7,7 @@
 .section {
   &-hero {
     display: grid;
-    min-height: 100vh;
+    min-height: 100svh;
     place-items: center;
     //background-color: black;
     > * {
