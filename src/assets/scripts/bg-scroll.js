@@ -37,6 +37,6 @@ export default function () {
     }
 
 // Init BgScroll
-    const el = document.querySelector('main');
-    new BgScroll(el);
+    //const el = document.querySelector('main');
+    //new BgScroll(el);
 }
