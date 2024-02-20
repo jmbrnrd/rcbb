@@ -8,15 +8,13 @@
     "build": "eleventy",
     "cert": "mkdir -p ./tls & mkcert -cert-file ./tls/localhost-cert.pem -key-file ./tls/localhost-key.pem -ecdsa localhost 127.0.0.1 ::1"
   },
-  "author": "RDL",
-  "browserslist": [
-    "> 0.5%",
-    "not IE 11"
-  ],
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.0.3",
-    "esbuild": "^0.17.18",
-    "markdown-it": "^13.0.1"
+    "esbuild": "^0.17.18"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.35",
+    "gsap": "^3.12.5"
   }
 }

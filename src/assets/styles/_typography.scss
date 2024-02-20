@@ -1,7 +1,7 @@
 
 @use 'variables' as *;
 
-html { font-size: 100%; }
+html { font-size: 125%; }
 body {
   font-size: $fs-default;
   font-family: $ff-primary;
@@ -18,10 +18,11 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 1rem;
   text-wrap: balance;
 }
+
 .display {
   font-weight: $fw-normal;
   font-size: clamp(1.75rem, 5vw + .5rem, 5rem);
-  color: white;
+  color: hsl(0, 50%, 50%);
   line-height: 1.05;
   &-copy {
     font-size: clamp(1rem,1vw + 1rem, 1.5rem);
@@ -30,7 +31,10 @@ h1, h2, h3, h4, h5 {
     opacity: .75;
   }
 }
-h1 { font-size: clamp(3rem, 3vw + 1rem, #{$fs-x-large});  }
+h1 {
+  color: hsl(0, 50%, 30%);
+  font-size: clamp(3rem, 5vw + 1rem, #{$fs-x-large});
+}
 h2 {
   font-size: clamp(1.75rem, 3vw + .5rem, #{$fs-x-large});
   line-height: 1.1;
@@ -42,6 +46,8 @@ strong { font-weight: $fw-bold; }
 p {
   line-height: 1.5;
   font-size: clamp(1rem, 2vw, #{$fs-default});
+  max-width: 70ch;
+  text-wrap: pretty;
 }
 .brand {
   font-weight: $fw-semi-bold;

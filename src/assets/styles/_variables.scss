@@ -1,33 +1,16 @@
 
-@font-face {
-  font-family: 'Acherus';
-  font-weight: 300;
-  src:  url('../fonts/horizon_type_-_acherusgrotesque-light-webfont.woff2') format('woff2'),
-  url('../fonts/horizon_type_-_acherusgrotesque-light-webfont.woff') format('woff');
-}
-@font-face {
-  font-family: 'Acherus';
-  font-weight: 500;
-  src:  url('../fonts/horizon_type_-_acherusgrotesque-semibold-webfont.woff2') format('woff2'),
-  url('../fonts/horizon_type_-_acherusgrotesque-semibold-webfont.woff') format('woff');
-}
-@font-face {
-  font-family: 'Acherus';
-  font-weight: 800;
-  src:  url('../fonts/horizon_type_-_acherusgrotesque-extrabold-webfont.woff2') format('woff2'),
-  url('../fonts/horizon_type_-_acherusgrotesque-extrabold-webfont.woff') format('woff');
-}
+
 
 // fonts
-$ff-primary: Acherus, sans-serif;
-$ff-heading: Acherus, sans-serif;
-$fw-normal: 300;
-$fw-semi-bold: 500;
-$fw-bold: 800;
+$ff-primary: 'DM Sans', sans-serif;
+$ff-heading: 'DM Serif Display', serif;
+$fw-normal: 400;
+$fw-semi-bold: 600;
+$fw-bold: 600;
 $fs-small: .9rem;
 $fs-default: 1.25rem;
 $fs-large: 1.875rem;
-$fs-x-large: 4rem;
+$fs-x-large: 5rem;
 $fs-button: .8rem;
 
 // colors

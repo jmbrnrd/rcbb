@@ -1,57 +1,79 @@
-@use 'vars' as *;
+@use 'variables' as *;
+@use 'mixins' as *;
 
-.logo {
-  width: min(62vw, 480px);
+html.lenis {
+  height: auto;
 }
 
-.section {
-  &-hero {
-    display: grid;
-    height: 100vh;
-    width: 100vw;
-    place-items: center;
-    > * {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+.hero {
+  position: relative;
+  height: 100dvh;
+  width: 100%;
+  display: grid;
+  grid-template-areas: 'stack';
+  place-items: center;
+  overflow: hidden;
+  > * {
+    grid-area: stack;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: #732626;
+  }
+
+  .bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .logo {
+    position: absolute;
+    max-width: 400px;
+    height: auto;
+    z-index: 1;
+  }
+}
+.container {
+  position: relative;
+  margin: 3rem;
+  display: block;
+
+  @media (width > 800px) {
+
+      display: grid;
+      grid-template-columns: 38% 1fr;
+      align-items: start;
+
+      :not(h2) {
+        grid-column: 2;
+      }
+    > h2 {
+      position: sticky;
+      top: 2rem;
     }
-    > img.bg {
-      height: inherit;
-      inset: 0 0 0 0;
-      -o-object-fit: cover;
-      object-fit: cover;
-      position: fixed;
-      width: 100vw;
-      z-index: -1;
-    }
-  }
-  &-about {
-    //background-color: white;
-    min-height: 200vh;
-  }
-  &-events {
 
-  }
-  &-contact {
-    //background-color: yellow;
-    min-height: 100vh;
+
   }
 }
 
-main {
-  transition: background-color;
-  transition-duration: .5s;
-  transition-timing-function: ease-in-out;
-}
 
-.bg {
-  &-hero {
-    background-color: black;
-  }
-  &-about {
-    background-color: red;
-  }
-  &-contact {
-    background-color: grey;
-  }
-}
 
