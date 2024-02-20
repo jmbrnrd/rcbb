@@ -7,6 +7,8 @@ export default function () {
     const lenis = new Lenis();
     gsap.registerPlugin(ScrollTrigger);
 
+    console.log(document.querySelector('.hero'));
+
     // lenis.on('scroll', (e) => {
     //     //console.log(e)
     // });
@@ -20,18 +22,42 @@ export default function () {
 
     const load = gsap.timeline().to('.overlay', {
         duration: .3,
-        opacity: 0,
-        delay: 1,
-        // height: 0
-    });
+        //opacity: 0,
+        delay: .5,
+        scaleY: 0,
+        transformOrigin: 'bottom'
+    })
+        .from('.rs', {
+            opacity: 0,
+            duration: .2,
+            stagger: .075,
+            y: -100,
+        })
+        .from('.the, .cbb', {
+            opacity: 0,
+            y: 50,
+            stagger: .3
+        })
+        .from('.lines', {
+            duration: .2,
+            scaleX: 0,
+            transformOrigin: 'center',
+        })
+        .from('.star', {
+            rotate: -520,
+            transformOrigin: 'center',
+            opacity: 0,
+            y: 20,
+            scale: 1
+        })
 
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: '.hero',
-            start: 'center center',
+            start: '62% center',
             end: 'bottom top',
             scrub: true,
-            markers: true
+           // markers: true
         }
     });
 
@@ -40,15 +66,13 @@ export default function () {
         scale: 1.1,
     });
 
-    // tl.to('.logo', {
-    //    y: 200
-    // });
 
-    // const navLinks = document.querySelectorAll('#navBar a, .hero-nav a');
-    // console.log(navLinks);
-    //
-    // navLinks.forEach((nav) => {
-    //     nav.addEventListener('click', () => lenis.scrollTo(nav.getAttribute('href')));
-    // });
+
+    const navLinks = document.querySelectorAll('#navBar a, .hero-nav a');
+    console.log(navLinks);
+
+    navLinks.forEach((nav) => {
+        nav.addEventListener('click', () => lenis.scrollTo(nav.getAttribute('href')));
+    });
 
 }

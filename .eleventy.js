@@ -1,39 +1,32 @@
 const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
-const markdownIt = require("markdown-it");
-const esbuild = require("esbuild");
-const { NODE_ENV = 'production' } = process.env
-const isProduction = NODE_ENV === 'production'
+const esbuild = require('esbuild');
+module.exports = function (eleventy) {
 
-module.exports = function (config) {
-
-  config.on('eleventy.before', async () => {
+  // Run esbuild before anything else (using bundle for js)
+  eleventy.on('eleventy.before', async () => {
     await esbuild.build({
-      entryPoints: ['src/assets/scripts/main.js'],
+      entryPoints:  ['./src/assets/scripts/index.js'],
       bundle: true,
       sourcemap: true,
-      outfile: 'public/assets/scripts/main.js',
-      target: isProduction? 'es6' : 'esnext'
-    });
-  });
+      outfile: './public/assets/scripts/bundle.js',
+      minify: false
+    })
+  })
 
-  const md = new markdownIt({
-    html: true
-  });
-
-  config.addPairedShortcode("markdown", (content) => {
-    return md.render(content);
-  });
-
-  config.addWatchTarget("./src/assets/styles/");
-  config.addShortcode("year", () => {
+  eleventy.addWatchTarget("./src/assets/styles/");
+  eleventy.addWatchTarget("./src/assets/images/");
+  eleventy.addWatchTarget("./src/assets/favicons/");
+  eleventy.addWatchTarget("./src/assets/scripts/");
+  eleventy.addShortcode("year", () => {
     return `${new Date().getFullYear()}`
   });
-  config.addWatchTarget('./src/assets/scripts/');
-  config.addPassthroughCopy("./src/assets/images/");
-  config.addPassthroughCopy("./src/assets/favicons/");
-  config.addPassthroughCopy("./src/assets/site.webmanifest");
-  config.addPassthroughCopy("./tls/");
-  config.addPlugin(eleventySass);
+
+  eleventy.addPassthroughCopy("./src/site.webmanifest");
+  eleventy.addPassthroughCopy("./src/favicon.ico");
+  eleventy.addPassthroughCopy("./src/assets/images");
+  eleventy.addPassthroughCopy("./src/assets/favicons");
+  eleventy.addPassthroughCopy("./tls/");
+  eleventy.addPlugin(eleventySass);
 
   return {
     templateFormats: ['md', 'njk'],
@@ -42,4 +35,5 @@ module.exports = function (config) {
       output: "public",
     },
   };
+
 };

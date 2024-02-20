@@ -1,7 +1,7 @@
 {
-  "name": "apptiser.com",
+  "name": "rcbb",
   "version": "0.0.1",
-  "description": "Apptiser marketing site",
+  "description": "The website for the Redstone Community Big Band",
   "main": "index.html",
   "scripts": {
     "start": "eleventy --serve",
