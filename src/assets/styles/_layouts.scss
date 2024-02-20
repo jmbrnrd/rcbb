@@ -56,7 +56,7 @@ html.lenis {
       fill: #fff;
     }
     .rs {
-      fill: rgb(252, 85, 13);
+      fill: hsl(0, 80%, 40%);
     }
   }
 }
@@ -67,6 +67,7 @@ html.lenis {
   h2 {
     text-transform: uppercase;
     font-size: 3rem;
+    color: hsl(0, 80%, 40%);
   }
 
   &.about {
@@ -75,9 +76,17 @@ html.lenis {
 
   }
   &.md {
-    background-color: hsl(62, 92%, 34%);
+    background-color: hsl(0, 80%, 40%);
   }
-  &.concerts {background-color: hsl(62, 92%, 34%);}
+  &.concerts {
+    background-color: hsl(0, 80%, 40%);
+    h2 {
+      color: hsl(0, 80%, 70%);
+    }
+    p {
+      color: hsl(0 100% 90%)
+    }
+  }
   &.join {}
   &.book {}
 
