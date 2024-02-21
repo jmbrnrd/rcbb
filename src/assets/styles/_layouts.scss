@@ -18,6 +18,7 @@ html.lenis {
 }
 
 $clr-primary-500: hsl(16, 800%, 50%);
+$clr-accent-500: hsl(186 81% 38%);
 
 .hero {
   position: relative;
@@ -33,7 +34,7 @@ $clr-primary-500: hsl(16, 800%, 50%);
   .overlay {
     position: absolute;
     inset: 0;
-    background: white;
+    background: $clr-primary-500;
   }
 
   .bg {
@@ -88,6 +89,7 @@ $clr-primary-500: hsl(16, 800%, 50%);
   &.join {}
   &.book {}
 
+
   @media (width > 800px) {
 
       display: grid;
@@ -96,7 +98,7 @@ $clr-primary-500: hsl(16, 800%, 50%);
       gap: 2rem;
 
       :not(.section-title) {
-        grid-column: 2;
+        //grid-column: 2;
       }
     .section-title {
       position: sticky;
@@ -116,6 +118,15 @@ $clr-primary-500: hsl(16, 800%, 50%);
 
 
   }
+}
+.logo-grid {
+  padding-right: 5vw;
+  //max-width: 70ch;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 .ll {
   color: black;

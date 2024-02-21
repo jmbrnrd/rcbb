@@ -21,11 +21,11 @@ export default function () {
     requestAnimationFrame(raf);
 
     const load = gsap.timeline().to('.overlay', {
-        duration: .3,
-        //opacity: 0,
+        duration: .75,
+        opacity: 0,
         delay: .5,
-        scaleY: 0,
-        transformOrigin: 'bottom'
+        // scaleY: 0,
+        // transformOrigin: 'bottom'
     })
         .from('.rs', {
             opacity: 0,
@@ -74,5 +74,8 @@ export default function () {
     navLinks.forEach((nav) => {
         nav.addEventListener('click', () => lenis.scrollTo(nav.getAttribute('href')));
     });
+
+    const scroller = document.querySelector('.scroller');
+
 
 }
