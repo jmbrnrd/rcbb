@@ -4,22 +4,20 @@
 html.lenis {
   height: auto;
 }
-
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }
-
 .lenis.lenis-smooth [data-lenis-prevent] {
   overscroll-behavior: contain;
 }
-
 .lenis.lenis-stopped {
   overflow: hidden;
 }
-
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+$clr-primary-500: hsl(16, 800%, 50%);
 
 .hero {
   position: relative;
@@ -43,11 +41,12 @@ html.lenis {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    opacity: .85;
   }
 
   .logo {
     position: absolute;
-    max-width: 62%;
+    width: min(80%, 600px);
     max-height: 100%;
     height: auto;
     object-fit: contain;
@@ -56,30 +55,29 @@ html.lenis {
       fill: #fff;
     }
     .rs {
-      fill: hsl(0, 80%, 40%);
+      fill: $clr-primary-500;
     }
   }
 }
 .content-section {
   position: relative;
-  padding: 2rem;
+  padding: 2rem 5rem;
   display: block;
   h2 {
     text-transform: uppercase;
     font-size: 3rem;
-    color: hsl(0, 80%, 40%);
+    color: hsl(16, 800%, 50%);
+    letter-spacing: .1rem;
   }
-
   &.about {
-    //background-color: hsl(15 100% 55%);
-    //color: white;
-
+    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 90%));
   }
   &.md {
-    background-color: hsl(0, 80%, 40%);
+    background-color: orangered;
   }
-  &.concerts {
-    background-color: hsl(0, 80%, 40%);
+  &.gigs {
+    background-image: linear-gradient(hsl(0, 50%, 40%), hsl(5, 50%, 30%));
+    //background-color: hsl(0, 80%, 40%);
     h2 {
       color: hsl(0, 80%, 70%);
     }
@@ -109,15 +107,34 @@ html.lenis {
       padding-block: 2rem;
     }
     h2 {
-      font-size: 5rem;
+      font-size: 4.5rem;
       text-align: right;
+      line-height: 1;
+      font-weight: 400;
+      letter-spacing: -.02rem;
     }
 
 
   }
 }
-.x {
+.ll {
   color: black;
+  font-weight: $fw-semi-bold;
 }
+.hl {
+  color: white;
+  font-weight: $fw-semi-bold;
+}
+
+.footer {
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(hsl(0 0% 10%),hsl(0 0% 5%));
+  padding: 3rem;
+  img {
+    width: min(200px, 90%);
+  }
+}
+
 
 
