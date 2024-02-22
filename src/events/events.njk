@@ -1,18 +1,33 @@
 ---
 title: "Event Listing"
+pageClass: "event-listing"
 layout: "base.njk"
 ---
 
-<header class="events">
-    <h1>RCBB Event Listing</h1>
-    <div>{% include 'partials/logo.njk' %}</div>
+<header class="event-header">
+    <a class="logo-container" href="/">{% include 'partials/logo.njk' %}</a>
+{#    <h1>{{ 'Concert & Event Listing' | upper }}</h1>#}
 </header>
-
 <main>
-    <ul>
-        <li>
-            event
-        </li>
+    <ul class="event-listing">
+        {% for event in events %}
+            <li class="event">
+                <div class="date">
+                    <span class="d">{{ event.date[0] | upper}}</span>
+                    <span class="m">{{ event.date[1] | upper}}</span>
+                    <span class="y">{{ event.date[2] | upper}}</span>
+                </div>
+                <div class="desc">
+                    <h2>{{ event.title }}</h2>
+                    <p class="desc">{{ event.desc }}</p>
+                </div>
+
+                <div class="image">
+                    <img src="/assets/images/{{ event.img }}" alt="">
+                </div>
+
+            </li>
+        {% endfor %}
     </ul>
 </main>
 

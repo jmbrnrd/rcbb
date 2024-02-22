@@ -1,0 +1,26 @@
+[
+  {
+    "date":  ["25","Nov","2023"],
+    "title":  "Spring Charity Concert",
+    "desc": "Our next event.",
+    "img":  "RCBB-flyer-202311.png"
+  },
+  {
+    "date": ["17","Jun","2023"],
+    "title":  "Summer Charity Concert in aid of the St Catherin'e Hospice",
+    "desc": "Our next event.",
+    "img":  "RCBB-flyer-202306.jpg"
+  },
+  {
+    "date": ["27","Apr","2019"],
+    "title":  "Swing into Spring",
+    "desc": "Lunchtime charity concert of big band music with all proceeds being donated to Marie Curie.",
+    "img":  "RCBB-Flyer-201904.png"
+  },
+  {
+    "date": ["17","Jun","2023"],
+    "title":  "Summer Charity Concert in aid of the St Catherin'e Hospice",
+    "desc": "Our next event.",
+    "img":  "RCBB-flyer-202306.jpg"
+  }
+]

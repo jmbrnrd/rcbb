@@ -22,7 +22,7 @@ $clr-accent-500: hsl(186 81% 38%);
 
 .hero {
   position: relative;
-  height: 80vh;
+  height: 85vh;
   width: 100%;
   display: grid;
   grid-template-areas: 'stack';
@@ -39,13 +39,15 @@ $clr-accent-500: hsl(186 81% 38%);
 
   .bg {
     position: absolute;
-    height: 100%;
-    width: 100%;
+    inset: 0 0 0 0;
+    height: inherit;
+    width: 100vw;
     object-fit: cover;
     opacity: .85;
   }
 
   .logo {
+    visibility: hidden;
     position: absolute;
     width: min(80%, 600px);
     max-height: 100%;
@@ -71,13 +73,13 @@ $clr-accent-500: hsl(186 81% 38%);
     letter-spacing: .1rem;
   }
   &.about {
-    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 90%));
+    //background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 90%));
   }
   &.md {
-    background-color: orangered;
+    //background-color: orangered;
   }
   &.gigs {
-    background-image: linear-gradient(hsl(0, 50%, 40%), hsl(5, 50%, 30%));
+    //background-image: linear-gradient(hsl(0, 50%, 40%), hsl(5, 50%, 30%));
     //background-color: hsl(0, 80%, 40%);
     h2 {
       color: hsl(0, 80%, 70%);
@@ -147,5 +149,100 @@ $clr-accent-500: hsl(186 81% 38%);
   }
 }
 
+.event-header {
+  display: grid;
+  place-items: center;
+  row-gap: 1rem;
+  //background-image: linear-gradient(hsl(0 50% 50%), hsl(0 50% 45%));
+  width: 100vw;
+  padding: 2rem;
+  height: fit-content;
+  .logo {
+    visibility: hidden;
+  }
+  .logo-container {
+    width: fit-content;
+    svg {
+      height: 15vh;
+      .rs, .lines, .star, .cbb, .the {
+        fill: hsl(0 0% 80%);
+      }
+    };
+  }
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+.event-listing {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  background-color: #eee;
+}
+.event {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 80px 1fr 38%;
+  gap: 2rem;
+  max-width: 900px;
+  width: 100%;
+  margin-inline: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 400px;
+  .date {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: $ff-heading;
+    background-color: hsl(0 0% 90%);
+    border-radius: 8px;
+    height: fit-content;
+    .d {
+      border-radius: 8px 8px 0 0;
+      background-color: #e6ff00;
+      font-size: 3rem;
+      width: 100%;
+      text-align: center;
+      line-height: 1.5;
+
+    }
+    .m {
+      font-size: 2rem;
+      padding: .5rem .5rem 0;
+      line-height: 1;
+    }
+    .y {
+      font-size: 1rem;
+      padding: 0 .5rem .5rem;
+      line-height: 1;
+    }
+  }
+  .image {
+
+  }
+  .desc {
+    flex-grow: 1;
+    h2 {
+      font-family: $ff-primary;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    p {
+      margin-top: .5rem;
+    }
+  }
+}
+
+.theme {
+  &-orange {
+    background-image: linear-gradient(hsl(18, 92%, 50%), hsl(18, 90%, 45%));
+    color: hsl(18, 0%, 100%);
+  }
+
+}
 
 

@@ -33,6 +33,7 @@ module.exports = function (eleventy) {
     dir: {
       input: "src",
       output: "public",
+      includes: "_includes"
     },
   };
 
