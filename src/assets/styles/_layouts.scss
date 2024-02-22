@@ -72,22 +72,9 @@ $clr-accent-500: hsl(186 81% 38%);
     color: hsl(16, 800%, 50%);
     letter-spacing: .1rem;
   }
-  &.about {
-    //background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 90%));
-  }
-  &.md {
-    //background-color: orangered;
-  }
-  &.gigs {
-    //background-image: linear-gradient(hsl(0, 50%, 40%), hsl(5, 50%, 30%));
-    //background-color: hsl(0, 80%, 40%);
-    h2 {
-      color: hsl(0, 80%, 70%);
-    }
-    p {
-      color: hsl(0 100% 90%)
-    }
-  }
+  &.about { }
+  &.md {}
+  &.gigs {}
   &.join {}
   &.book {}
 
@@ -238,9 +225,25 @@ $clr-accent-500: hsl(186 81% 38%);
 }
 
 .theme {
+
   &-orange {
-    background-image: linear-gradient(hsl(18, 92%, 50%), hsl(18, 90%, 45%));
-    color: hsl(18, 0%, 100%);
+    background-image: linear-gradient($clr-primary-500, darken($clr-primary-500, 10%));
+    h2 {
+      color: darken($clr-primary-500, 25%);
+    }
+    p {
+      color: white;
+    }
+  }
+
+  &-white {
+    background-image: linear-gradient(white, $clr-grey-100);
+    h2 {
+      color: $clr-primary-500;
+    }
+    p {
+      color: $clr-grey-900;
+    }
   }
 
 }

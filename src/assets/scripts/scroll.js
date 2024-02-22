@@ -67,11 +67,13 @@ export default function () {
             scale: 1.4,
         });
 
-        const navLinks = document.querySelectorAll('#navBar a, .hero-nav a');
-        console.log(navLinks);
+        const anchors = document.querySelectorAll('a');
 
-        navLinks.forEach((nav) => {
-            nav.addEventListener('click', () => lenis.scrollTo(nav.getAttribute('href')));
+        anchors.forEach((link) => {
+            let href = link.getAttribute('href');
+            if (href.indexOf('#') === 0) {
+                link.addEventListener('click', () => lenis.scrollTo(link.getAttribute('href')));
+            }
         });
 
     }
