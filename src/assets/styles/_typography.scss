@@ -57,7 +57,7 @@ p {
   margin-top: 1em;
   font-size: $fs-small;
 }
-a.inline {
+a.inline, p > a {
   position: relative;
   color: inherit;
   font-weight: $fw-semi-bold;

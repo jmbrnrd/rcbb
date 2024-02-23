@@ -49,6 +49,7 @@ $clr-accent-500: hsl(186 81% 38%);
   .logo {
     visibility: hidden;
     position: absolute;
+    transform: translateY(-5vh);
     width: min(80%, 600px);
     max-height: 100%;
     height: auto;
@@ -64,7 +65,7 @@ $clr-accent-500: hsl(186 81% 38%);
 }
 .content-section {
   position: relative;
-  padding: 2rem 5rem;
+  padding: 2rem 2rem;
   display: block;
   h2 {
     text-transform: uppercase;
@@ -72,12 +73,6 @@ $clr-accent-500: hsl(186 81% 38%);
     color: hsl(16, 800%, 50%);
     letter-spacing: .1rem;
   }
-  &.about { }
-  &.md {}
-  &.gigs {}
-  &.join {}
-  &.book {}
-
 
   @media (width > 800px) {
 
@@ -85,6 +80,7 @@ $clr-accent-500: hsl(186 81% 38%);
       grid-template-columns: 38% 1fr;
       align-items: start;
       gap: 2rem;
+    padding: 2rem 5rem;
 
       :not(.section-title) {
         //grid-column: 2;
@@ -96,6 +92,16 @@ $clr-accent-500: hsl(186 81% 38%);
     }
     .section-body {
       padding-block: 2rem;
+      //&::first-letter {
+      //  initial-letter: 2;
+      //  margin-right: .25rem;
+      //  font-weight: bold;
+      //}
+      h3 {
+        color: currentColor;
+        font-family: $ff-primary;
+        font-weight: $fw-semi-bold;
+      }
     }
     h2 {
       font-size: 4.5rem;
@@ -115,7 +121,7 @@ $clr-accent-500: hsl(186 81% 38%);
   display: grid;
   place-items: center;
   gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 }
 .ll {
   color: black;
@@ -179,6 +185,7 @@ $clr-accent-500: hsl(186 81% 38%);
   border-radius: 12px;
   overflow: hidden;
   height: 400px;
+  padding: 2rem;
   .date {
     display: flex;
     flex-direction: column;
@@ -228,22 +235,36 @@ $clr-accent-500: hsl(186 81% 38%);
 
   &-orange {
     background-image: linear-gradient($clr-primary-500, darken($clr-primary-500, 10%));
+    color: white;
     h2 {
-      color: darken($clr-primary-500, 25%);
+      color: darken($clr-primary-500, 20%);
     }
     p {
       color: white;
     }
   }
 
+  &-grey {
+    background-image: linear-gradient( $clr-grey-100, $clr-grey-200);
+    h2 {
+      color: $clr-grey-900;
+    }
+    p {
+      color: $clr-grey-900;
+
+    }
+
+  }
+
   &-white {
-    background-image: linear-gradient(white, $clr-grey-100);
+    background-color: white;
     h2 {
       color: $clr-primary-500;
     }
     p {
       color: $clr-grey-900;
     }
+
   }
 
 }
