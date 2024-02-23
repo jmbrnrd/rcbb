@@ -1,26 +1,69 @@
 [
   {
+    "date":  ["20","Apr","2024"],
+    "title":  "Easter Charity Concert",
+    "desc": "Big band charity concert in aid of Charlotte's BAG. Entry by donation. 12 - 2pm, entry by donation.",
+    "img":  "",
+    "charity": "logo-charlottes-bag.png"
+  },
+  {
     "date":  ["25","Nov","2023"],
-    "title":  "Spring Charity Concert",
-    "desc": "Our next event.",
-    "img":  "RCBB-flyer-202311.png"
+    "title":  "Autumn Charity Concert",
+    "desc": "Big band charity concert in aid of @Dementia1st Entry by donation, licensed bar and free parking.",
+    "img":  "RCBB-flyer-202311.png",
+    "charity": "logo-dementia-first.jpeg"
   },
   {
     "date": ["17","Jun","2023"],
-    "title":  "Summer Charity Concert in aid of the St Catherin'e Hospice",
-    "desc": "Our next event.",
-    "img":  "RCBB-flyer-202306.jpg"
+    "title":  "Duke Ellington Favourites",
+    "desc": "Charity concert in aid of St Catherine's Hospice. We'll be playing a selection of Duke Ellington classics, plus a few of our favourites. ADMISSION FREE, donations welcome.",
+    "img":  "RCBB-flyer-202306.jpg",
+    "charity": "logo-st-catherines.png"
+  },
+  {
+    "date": ["26","Nov","2022"],
+    "title":  "Film & TV Special",
+    "desc": "Come down and enjoy some classic TV and film themes and help us raise a little money for the Samaritans..",
+    "img":  "RCBB-flyer-202211.jpeg",
+    "charity": "logo-samaritans.svg"
+  },
+  {
+    "date": ["07","May","2022"],
+    "title":  "Charity Concert",
+    "desc": "Lunchtime charity concert of big band music with all proceeds going to Macmillan Cancer Support.",
+    "img":  "RCBB-flyer-202205.png",
+    "charity": "logo-macmillan.png"
   },
   {
     "date": ["27","Apr","2019"],
     "title":  "Swing into Spring",
     "desc": "Lunchtime charity concert of big band music with all proceeds being donated to Marie Curie.",
-    "img":  "RCBB-Flyer-201904.png"
+    "img":  "RCBB-Flyer-201904.png",
+    "charity": "logo-marie-curie.png"
   },
   {
-    "date": ["17","Jun","2023"],
-    "title":  "Summer Charity Concert in aid of the St Catherin'e Hospice",
-    "desc": "Our next event.",
-    "img":  "RCBB-flyer-202306.jpg"
+    "date": ["15","Dec","2018"],
+    "title":  "PreChristmas Festive Tunes",
+    "desc": "",
+    "img":  "RCBB-flyer-201812.jpg"
+  },
+  {
+    "date":  ["10","Nov","2018"],
+    "title":  "Centenary of the Armistice",
+    "desc": "Join us in saying thank you and remembering all those that served & sacrificed.",
+    "img":  "RCBB-flyer-201811-final.png"
+  },
+  {
+    "date": ["20","May","2017"],
+    "title":  "The Redstone Variety Show",
+    "desc": "The Redstone Community Big Band with Swing Thing lindy hop dance group and comedy mind-readerBaldwin, plus comedians Pete White and Dave Nanton.",
+    "img":  "RCBB-flyer-201705.jpg"
+  },
+  {
+    "date": ["23","April","2016"],
+    "title":  "Spring Fever",
+    "desc": "A fabulous evening of great music, with donations going to Challengers Charity for Disabled Children.",
+    "img":  "RCBB-flyer-201604.jpg",
+    "charity": "logo-challengers.svg"
   }
 ]

@@ -1,6 +1,6 @@
 ---
 title: "Event Listing"
-pageClass: "event-listing"
+pageClass: "page-events"
 layout: "base.njk"
 ---
 
@@ -20,6 +20,9 @@ layout: "base.njk"
                 <div class="desc">
                     <h2>{{ event.title }}</h2>
                     <p class="desc">{{ event.desc }}</p>
+                    {% if event.charity %}
+                    <img class="img-charity" src="/assets/images/{{ event.charity }}">
+                    {% endif %}
                 </div>
 
                 <div class="image">
