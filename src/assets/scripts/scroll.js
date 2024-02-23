@@ -67,6 +67,23 @@ export default function () {
             scale: 1.4,
         });
 
+        let evImgs = document.querySelectorAll('.event')
+
+        evImgs.forEach((e) => {
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: e,
+                    scrub: true,
+                    end: "top center",
+                    start: "top 62%"
+                }
+            });
+
+            tl.from(e.querySelector(".image img"), {
+                opacity: 0
+            });
+        });
+
         const anchors = document.querySelectorAll('a');
 
         anchors.forEach((link) => {

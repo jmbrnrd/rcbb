@@ -5,8 +5,8 @@ layout: "base.njk"
 ---
 
 <header class="event-header">
-    <a class="logo-container" href="/">{% include 'partials/logo.njk' %}</a>
-{#    <h1>{{ 'Concert & Event Listing' | upper }}</h1>#}
+{#    <a class="logo-container" href="/">{% include 'partials/logo.njk' %}</a>#}
+    <h1>{{ 'RCBB Concert & Event Listing' | upper }}</h1>
 </header>
 <main>
     <ul class="event-listing">
@@ -21,7 +21,7 @@ layout: "base.njk"
                     <h2>{{ event.title }}</h2>
                     <p class="desc">{{ event.desc }}</p>
                     {% if event.charity %}
-                    <img class="img-charity" alt="Charity logo" src="/assets/images/{{ event.charity }}">
+                    <img loading="lazy" class="img-charity" alt="Charity logo" src="/assets/images/{{ event.charity }}">
                     {% endif %}
                 </div>
                 <div class="image">
