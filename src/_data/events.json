@@ -2,23 +2,32 @@
   {
     "date":  ["20","Apr","2024"],
     "title":  "Easter Charity Concert",
-    "desc": "Big band charity concert in aid of Charlotte's BAG. Entry by donation. 12 - 2pm, entry by donation.",
+    "desc": "Big band charity concert in aid of Charlotte's BAG. Entry by donation.",
     "img":  "",
-    "charity": "logo-charlottes-bag.png"
+    "charity": "logo-charlottes-bag.png",
+    "time": "11:45 for 12pm",
+    "venue":  "Perrywood Sports & Social Club",
+    "tickets": "Entry by donation"
   },
   {
     "date":  ["25","Nov","2023"],
     "title":  "Autumn Charity Concert",
     "desc": "Big band charity concert in aid of @Dementia1st Entry by donation, licensed bar and free parking.",
     "img":  "RCBB-flyer-202311.png",
-    "charity": "logo-dementia-first.jpeg"
+    "charity": "logo-dementia-first.jpeg",
+    "time": "11:45 for 12pm",
+    "venue":  "Perrywood Sports & Social Club",
+    "tickets": "Entry by donation"
   },
   {
     "date": ["17","Jun","2023"],
     "title":  "Duke Ellington Favourites",
     "desc": "Charity concert in aid of St Catherine's Hospice. We'll be playing a selection of Duke Ellington classics, plus a few of our favourites. ADMISSION FREE, donations welcome.",
     "img":  "RCBB-flyer-202306.jpg",
-    "charity": "logo-st-catherines.png"
+    "charity": "logo-st-catherines.png",
+    "time": "11:45 for 12pm",
+    "venue":  "Perrywood Sports & Social Club",
+    "tickets": "Entry by donation"
   },
   {
     "date": ["26","Nov","2022"],
@@ -32,14 +41,20 @@
     "title":  "Charity Concert",
     "desc": "Lunchtime charity concert of big band music with all proceeds going to Macmillan Cancer Support.",
     "img":  "RCBB-flyer-202205.png",
-    "charity": "logo-macmillan.png"
+    "charity": "logo-macmillan.png",
+    "time": "11:45 for 12pm",
+    "venue":  "Perrywood Sports & Social Club",
+    "tickets": "Entry by donation"
   },
   {
     "date": ["27","Apr","2019"],
     "title":  "Swing into Spring",
     "desc": "Lunchtime charity concert of big band music with all proceeds being donated to Marie Curie.",
     "img":  "RCBB-Flyer-201904.png",
-    "charity": "logo-marie-curie.png"
+    "charity": "logo-marie-curie.png",
+    "time": "11:45 for 12pm",
+    "venue":  "Perrywood Sports & Social Club",
+    "tickets": "Entry by donation"
   },
   {
     "date": ["15","Dec","2018"],
@@ -51,13 +66,19 @@
     "date":  ["10","Nov","2018"],
     "title":  "Centenary of the Armistice",
     "desc": "Join us in saying thank you and remembering all those that served & sacrificed.",
-    "img":  "RCBB-flyer-201811-final.png"
+    "img":  "RCBB-flyer-201811-final.png",
+    "time": "11:45 for 12pm",
+    "venue":  "Perrywood Sports & Social Club",
+    "tickets": "Entry by donation"
   },
   {
-    "date": ["20","May","2017"],
+    "date": ["20","May","17"],
     "title":  "The Redstone Variety Show",
     "desc": "The Redstone Community Big Band with Swing Thing lindy hop dance group and comedy mind-readerBaldwin, plus comedians Pete White and Dave Nanton.",
-    "img":  "RCBB-flyer-201705.jpg"
+    "img":  "RCBB-flyer-201705.jpg",
+    "time": "7pm for 7:30pm",
+    "venue":  "The Warwick School, Redhill",
+    "tickets":"£10.50"
   },
   {
     "date": ["23","April","2016"],

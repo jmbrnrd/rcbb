@@ -12,20 +12,29 @@ layout: "base.njk"
     <ul class="event-listing">
         {% for event in events %}
             <li class="event">
+                <div>
                 <div class="date">
-                    <span class="d">{{ event.date[0] | upper}}</span>
-                    <span class="m">{{ event.date[1] | upper}}</span>
-                    <span class="y">{{ event.date[2] | upper}}</span>
+                    <span class="m">{{ event.date[1] | upper }} {{ event.date[2] | upper }}</span>
+                    <span class="d">{{ event.date[0] | upper }}</span>
+
+                </div>
                 </div>
                 <div class="desc">
                     <h2>{{ event.title }}</h2>
                     <p class="desc">{{ event.desc }}</p>
+                    {% if event.venue %}
+                        <span><strong>Venue</strong>: {{ event.venue }}</span>
+                    {% endif %}
+                    {% if event.tickets %}
+                        <span><strong>Tickets</strong>: {{ event.tickets }}</span>
+                    {% endif %}
                     {% if event.charity %}
                     <img loading="lazy" class="img-charity" alt="Charity logo" src="/assets/images/{{ event.charity }}">
                     {% endif %}
                 </div>
                 <div class="image">
-                    <img src="/assets/images/{{ event.img }}" alt="">
+                    <a href="/assets/images/{{ event.img }}" class=""><img src="/assets/images/{{ event.img }}"
+                                                                                alt=""></a>
                 </div>
             </li>
         {% endfor %}
