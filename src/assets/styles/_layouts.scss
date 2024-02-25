@@ -1,6 +1,7 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+// Lenis styles
 html.lenis {
   height: auto;
 }
@@ -17,6 +18,7 @@ html.lenis {
   pointer-events: none;
 }
 
+
 $clr-primary-500: hsl(16, 800%, 50%);
 $clr-accent-500: hsl(186 81% 38%);
 $section-padding: 4rem;
@@ -30,9 +32,8 @@ $section-padding: 4rem;
   grid-template-areas: 'stack';
   place-items: center;
   overflow: hidden;
-  > * {
-    grid-area: stack;
-  }
+  > * { grid-area: stack; }
+
   .overlay {
     position: absolute;
     inset: 0;
@@ -58,13 +59,9 @@ $section-padding: 4rem;
     height: auto;
     object-fit: contain;
     z-index: 1;
-    #rcbb_logo_basic {
-      fill: #fff;
-    }
-    .rs {
-      fill: $clr-primary-500;
-    }
+    .rs { fill: $clr-primary-500; }
   }
+
   .social {
     position: absolute;
     top: 3rem;
@@ -88,7 +85,6 @@ $section-padding: 4rem;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-
 
   .section-title {
     padding: 2rem 2rem 0;
@@ -160,13 +156,14 @@ $section-padding: 4rem;
     }
   }
 }
+
 .logo-grid {
-  //padding-right: 5vw;
-  margin-inline: auto;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   place-items: center;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  margin-inline: auto;
+  padding-bottom: 2rem;
 }
 .ll {
   color: black;
@@ -189,43 +186,35 @@ $section-padding: 4rem;
 
 .event-header {
   display: grid;
-  place-items: center;
-  row-gap: 1rem;
-  //background-image: linear-gradient(hsl(0 50% 50%), hsl(0 50% 45%));
-  width: 100vw;
-  padding: 2rem;
-  height: fit-content;
-  .logo {
-    visibility: hidden;
-  }
-  .logo-container {
-    width: fit-content;
-    svg {
-      height: 15vh;
-      .rs, .lines, .star, .cbb, .the {
-        fill: hsl(0 0% 80%);
-      }
-    };
-  }
-  h1 {
-    font-size: 3rem;
-    text-align: center;
-    font-weight: $fw-normal;
-    color: $clr-primary-500;
+  grid-template-columns: 1fr minmax(0, 960px) 1fr;
+  .header {
+    grid-column: 2 / 3;
+    display: grid;
+    padding-block: 1rem;
+    grid-template-columns: 4rem minmax(0, 960px) 4rem;
+    place-items: center;
+
+
+    h1 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin: 0;
+      color: $clr-primary-500;
+    }
   }
 }
 .page-events {
   background-color: #eee;
 }
 .event-listing {
-  margin-inline: 2rem;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr minmax(0, 960px) 1fr;
   gap: 1rem;
   height: fit-content;
 }
 .event {
   visibility: hidden;
+  grid-column: 2 / 3;
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr;
@@ -235,9 +224,9 @@ $section-padding: 4rem;
   margin-inline: auto;
   border-radius: 12px;
   overflow: hidden;
-  height: fit-content;
+  //height: fit-content;
   padding: 2rem;
-  @include mq($mq-medium) { grid-template-columns: 65px 1fr 25%; }
+  @include mq($mq-medium) { grid-column: 2 / 3; grid-template-columns: 65px 1fr 25%; }
   .date {
     display: flex;
     flex-direction: column;
