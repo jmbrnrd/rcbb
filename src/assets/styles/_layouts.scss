@@ -48,6 +48,7 @@ $section-padding: 4rem;
     width: 100%;
     object-fit: cover;
     opacity: .85;
+    filter: blur(2px);
   }
 
   .logo {

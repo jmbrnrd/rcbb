@@ -56,8 +56,6 @@ export default function () {
                 })
         }
 
-
-
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.hero',
@@ -83,15 +81,15 @@ export default function () {
         });
 
 
-        ScrollTrigger.batch(".event", {
-            start: 'top 80%',
-            onEnter: batch => {
-                gsap.to(batch, {
-                    autoAlpha: 1,
-                    duration: .3
-                });
-            },
-        });
+        // ScrollTrigger.batch(".event", {
+        //     start: 'top 80%',
+        //     onEnter: batch => {
+        //         gsap.to(batch, {
+        //             autoAlpha: 1,
+        //             duration: .3
+        //         });
+        //     },
+        // });
 
     }
 
