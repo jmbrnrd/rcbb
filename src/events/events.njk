@@ -8,10 +8,10 @@ layout: "base.njk"
     <div></div>
     <div class="header">
         <a href="/" class="btn-back">
-
             <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36"><path d="M360-200
-            80-480l280-280 56 56-183 184h647v80H233l184 184-57 56Z"/></svg></a>
-        <h1>{{ 'RCBB Concert & Event Listing' | upper }}</h1>
+            80-480l280-280 56 56-183 184h647v80H233l184 184-57 56Z"/></svg>
+        </a>
+        <h1>{{ 'Concert & Event Listing' | upper }}</h1>
         <span></span>
     </div>
    <div></div>
@@ -51,5 +51,6 @@ layout: "base.njk"
         {% endfor %}
     </ul>
 </main>
+{% include 'partials/footer.njk' %}
 
 

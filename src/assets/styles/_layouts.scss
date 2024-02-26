@@ -92,6 +92,7 @@ $section-padding: 4rem;
       text-transform: uppercase;
       font-size: 2.4rem;
       letter-spacing: .1rem;
+      font-weight: $fw-normal;
     }
   }
   .section-body {
@@ -203,7 +204,7 @@ $section-padding: 4rem;
     grid-column: 2 / 3;
     display: grid;
     padding-block: 1rem;
-    grid-template-columns: 4rem minmax(0, 960px) 4rem;
+    grid-template-columns: 5rem minmax(0, 960px) 5rem;
     place-items: center;
 
 
@@ -232,14 +233,17 @@ $section-padding: 4rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  max-width: 900px;
   width: 100%;
-  margin-inline: auto;
   border-radius: 12px;
   overflow: hidden;
-  //height: fit-content;
   padding: 2rem;
-  @include mq($mq-medium) { grid-column: 2 / 3; grid-template-columns: 64px 1fr 25%; }
+  &:last-child {
+    margin-bottom: 2rem;
+  }
+  @include mq($mq-medium) {
+    grid-column: 2 / 3;
+    grid-template-columns: 64px 1fr 25%;
+  }
   .date {
     display: flex;
     flex-direction: column;
@@ -303,7 +307,10 @@ $section-padding: 4rem;
   }
 }
 .btn-back {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  gap: 1rem;
 }
 .theme {
   &-orange {
