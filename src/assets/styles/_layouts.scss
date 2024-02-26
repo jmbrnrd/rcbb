@@ -174,18 +174,25 @@ $section-padding: 4rem;
 }
 
 .footer {
+  position: relative;
   display: grid;
   place-content: center;
   place-items: center;
   background-image: linear-gradient(hsl(0 0% 10%),hsl(0 0% 5%));
   padding: 3rem;
   min-height: 50dvh;
+  z-index: 10;
   img {
     width: min(200px, 90%);
+  }
+  svg {
+    fill: $clr-primary-500;
   }
   p {
     margin-top: 1rem;
     font-size: .8rem;
+    text-align: center;
+    color: $clr-primary-500;
   }
 }
 
