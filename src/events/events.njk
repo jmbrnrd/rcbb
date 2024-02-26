@@ -7,7 +7,8 @@ layout: "base.njk"
 <header class="event-header">
     <div></div>
     <div class="header">
-        <a href="/">
+        <a href="/" class="btn-back">
+
             <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36"><path d="M360-200
             80-480l280-280 56 56-183 184h647v80H233l184 184-57 56Z"/></svg></a>
         <h1>{{ 'RCBB Concert & Event Listing' | upper }}</h1>
@@ -29,19 +30,22 @@ layout: "base.njk"
                 <div class="desc">
                     <h2>{{ event.title }}</h2>
                     <p class="desc">{{ event.desc }}</p>
-                    {% if event.venue %}
-                        <span><strong>Venue</strong>: {{ event.venue }}</span>
+                    {% if event.venueMapLink %}
+                        <span><strong>Venue</strong>: <a href="{{ event.venueMapLink }}" target="_blank">{{ event.venue }}</a></span>
                     {% endif %}
                     {% if event.tickets %}
                         <span><strong>Tickets</strong>: {{ event.tickets }}</span>
+                    {% endif %}
+                    {% if event.time %}
+                        <span><strong>Doors</strong>: {{ event.time }}</a></span>
                     {% endif %}
                     {% if event.charity %}
                     <img loading="lazy" class="img-charity" alt="Charity logo" src="/assets/images/{{ event.charity }}">
                     {% endif %}
                 </div>
                 <div class="image">
-                    <a href="/assets/images/{{ event.img }}" class=""><img src="/assets/images/{{ event.img }}"
-                                                                                alt=""></a>
+                    <a href="/assets/images/{{ event.img }}" class="">
+                        <img src="/assets/images/{{ event.img }}" alt=""></a>
                 </div>
             </li>
         {% endfor %}

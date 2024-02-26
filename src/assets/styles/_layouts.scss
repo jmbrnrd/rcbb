@@ -26,7 +26,7 @@ $section-padding: 4rem;
 
 .hero {
   position: relative;
-  height: 85vh;
+  height: 75vh;
   width: 100%;
   display: grid;
   grid-template-areas: 'stack';
@@ -91,7 +91,6 @@ $section-padding: 4rem;
     h2 {
       text-transform: uppercase;
       font-size: 2.4rem;
-      color: $clr-primary-500;
       letter-spacing: .1rem;
     }
   }
@@ -198,6 +197,7 @@ $section-padding: 4rem;
     h1 {
       text-align: center;
       font-size: 2.4rem;
+      font-weight: $fw-normal;
       margin: 0;
       color: $clr-primary-500;
     }
@@ -226,7 +226,7 @@ $section-padding: 4rem;
   overflow: hidden;
   //height: fit-content;
   padding: 2rem;
-  @include mq($mq-medium) { grid-column: 2 / 3; grid-template-columns: 65px 1fr 25%; }
+  @include mq($mq-medium) { grid-column: 2 / 3; grid-template-columns: 64px 1fr 25%; }
   .date {
     display: flex;
     flex-direction: column;
@@ -236,6 +236,7 @@ $section-padding: 4rem;
     background-color: hsl(0 0% 90%);
     border-radius: 8px;
     height: fit-content;
+    max-width: 80px;
     .d {
       border-radius: 0 0 8px 8px;
       background-color: #e6ff00;
@@ -259,8 +260,13 @@ $section-padding: 4rem;
     }
   }
   .image {
-    overflow: hidden;
-    aspect-ratio: 1;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
   }
   .img-charity {
     max-height: 3rem;
@@ -283,42 +289,50 @@ $section-padding: 4rem;
     }
   }
 }
-
+.btn-back {
+  text-decoration: none;
+}
 .theme {
   &-orange {
     background-image: linear-gradient($clr-primary-500, darken($clr-primary-500, 10%));
     color: white;
-    h2 {
-      color: darken($clr-primary-500, 20%) !important;
-    }
-    p {
-      color: white;
-    }
+    h2 { color: darken($clr-primary-500, 20%); }
+    p { color: white; }
+  }
+  &-blue {
+    background-image: linear-gradient($clr-accent-500, darken($clr-accent-500, 5%));
+    color: white;
+    h2 { color: darken($clr-primary-500, 20%); }
+    p { color: white; }
   }
   &-grey {
     background-image: linear-gradient( $clr-grey-100, $clr-grey-200);
-    h2 {
-      color: $clr-grey-900 !important;
-      &.white {
-        color: hsl(0 0% 100% / .5) !important;
-      }
-    }
-    p {
-      color: $clr-grey-900;
-    }
+    h2 { color: $clr-grey-900; }
+    p { color: $clr-grey-900; }
   }
   &-white {
     background-color: white;
-    h2 {
-      color: $clr-primary-500;
-      &.white {
-        color: white;
-      }
-    }
-    p {
-      color: $clr-grey-900;
-    }
+    h2 { color: $clr-primary-500; }
+    p { color: $clr-grey-900; }
   }
 }
+.accent {
+  color: $clr-accent-500 !important;
+  opacity: .75;
+}
+.primary {
+  color: $clr-primary-500 !important;
+}
+.white {
+  color: white !important;
+  opacity: .5;
+}
+.black {
+  color: $clr-grey-900 !important;
+}
+.bw {
+  filter: saturate(0);
+}
+
 
 

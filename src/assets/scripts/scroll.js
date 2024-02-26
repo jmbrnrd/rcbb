@@ -29,7 +29,7 @@ export default function () {
                 .to('.overlay', {
                     duration: .75,
                     opacity: 0,
-                    delay: .5,
+                    delay: .3,
                 })
                 .from('.logo .rs', {
                     opacity: 0,

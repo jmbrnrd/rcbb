@@ -3,10 +3,11 @@
     "date":  ["20","Apr","2024"],
     "title":  "Easter Charity Concert",
     "desc": "Big band charity concert in aid of Charlotte's BAG. Entry by donation.",
-    "img":  "",
+    "img":  "feature-cb.jpg",
     "charity": "logo-charlottes-bag.png",
-    "time": "11:45 for 12pm",
+    "time": "11:45 for 12pm start",
     "venue":  "Perrywood Sports & Social Club",
+    "venueMapLink": "https://maps.app.goo.gl/5kFZfyDBpQ7njYnAA",
     "tickets": "Entry by donation"
   },
   {
@@ -17,6 +18,7 @@
     "charity": "logo-dementia-first.jpeg",
     "time": "11:45 for 12pm",
     "venue":  "Perrywood Sports & Social Club",
+    "venueMapLInk": "https://maps.app.goo.gl/5kFZfyDBpQ7njYnAA",
     "tickets": "Entry by donation"
   },
   {
@@ -27,6 +29,7 @@
     "charity": "logo-st-catherines.png",
     "time": "11:45 for 12pm",
     "venue":  "Perrywood Sports & Social Club",
+    "venueMapLInk": "https://maps.app.goo.gl/5kFZfyDBpQ7njYnAA",
     "tickets": "Entry by donation"
   },
   {
@@ -81,7 +84,7 @@
     "tickets":"£10.50"
   },
   {
-    "date": ["23","April","2016"],
+    "date": ["23","Apr","2016"],
     "title":  "Spring Fever",
     "desc": "A fabulous evening of great music, with donations going to Challengers Charity for Disabled Children.",
     "img":  "RCBB-flyer-201604.jpg",
