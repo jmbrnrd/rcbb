@@ -66,10 +66,10 @@ export default function () {
             }
         });
 
-        tl.to('.bg', {
-            // y: 100,
-            scale: 1.4,
-        });
+        // tl.to('.bg', {
+        //     //y: 100,
+        //     scale: 1.1,
+        // });
 
         const anchors = document.querySelectorAll('a');
 
