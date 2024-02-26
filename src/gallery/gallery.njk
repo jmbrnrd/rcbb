@@ -4,9 +4,11 @@ pageClass: "page-gallery"
 layout: "base.njk"
 ---
 <ul class="gallery-container">
-    <li><img src="{{ '/assets/images/IMG_8286.jpg' | url }}" alt=""></li>
-    <li><img src="{{ '/assets/images/IMG_8286.jpg' | url }}" alt=""></li>
-    <li><img src="{{ '/assets/images/IMG_8286.jpg' | url }}" alt=""></li>
-    <li><img src="{{ '/assets/images/IMG_8286.jpg' | url }}" alt=""></li>
-    <li><img src="{{ '/assets/images/IMG_8286.jpg' | url }}" alt=""></li>
+    {% for img in gallery %}
+    <li>
+        <a href="{{ img.href }}" class="glightbox">
+        <img src="{{ img.src }}" alt="{{ img.alt }}">
+        </a>
+    </li>
+    {% endfor %}
 </ul>
