@@ -1,5 +1,5 @@
 ---
-title: "Event Listing"
+title: "Redstone Community Big Band - Concert Listing"
 pageClass: "page-events"
 layout: "base.njk"
 ---
@@ -21,11 +21,10 @@ layout: "base.njk"
         {% for event in events %}
             <li class="event">
                 <div>
-                <div class="date">
-                    <span class="m">{{ event.date[1] | upper }} {{ event.date[2] | upper }}</span>
-                    <span class="d">{{ event.date[0] | upper }}</span>
-
-                </div>
+                    <div class="date">
+                        <span class="m">{{ event.date[1] | upper }} {{ event.date[2] | upper }}</span>
+                        <span class="d">{{ event.date[0] | upper }}</span>
+                    </div>
                 </div>
                 <div class="desc">
                     <h2>{{ event.title }}</h2>
@@ -44,8 +43,9 @@ layout: "base.njk"
                     {% endif %}
                 </div>
                 <div class="image">
-                    <a href="/assets/images/{{ event.img }}" class="">
-                        <img src="/assets/images/{{ event.img }}" alt=""></a>
+                    <a href="/assets/images/{{ event.img }}" aria-label="Download {{ event.name }} concert flyer">
+                        <img src="/assets/images/{{ event.img }}">
+                    </a>
                 </div>
             </li>
         {% endfor %}
