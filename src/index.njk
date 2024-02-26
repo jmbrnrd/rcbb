@@ -16,20 +16,21 @@ layout: "base.njk"
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"/>
                 <circle cx="11.994" cy="11.979" r="3.003"/>
-            </svg></a>
+            </svg>
+        </a>
     </div>
     <div class="overlay"></div>
     {% include 'partials/logo.njk' %}
 </header>
 
-<div class="content-section theme-grey">
+<div id="about" class="content-section theme-grey">
     <div class="section-title">
         <h2>About the band</h2>
     </div>
     <div class="section-body">
         <p>The <span class="ll">Redstone Community Big Band</span> is a group of like-minded, amateur musicians of all
             ages, that get together once a week to play arrangements of classic big band jazz, swing, latin and contemporary music.</p>
-        <p>The band is directed with great enthusiasm and expertise by <a href="#md">Graham Russell</a>, a 
+        <p>The band is directed with great enthusiasm and expertise by <a href="#musicaldirector">Graham Russell</a>, a
             professional musician with more than 40years experience and a particular passion for the big band genre.</p>
         <p>The band performs regular public concerts throughout the year, raising money for our nominated local charities,
            as well as occasional private bookings: local shows, wedding anniversaries etc. See our <a 
@@ -39,14 +40,15 @@ layout: "base.njk"
     </div>
 </div>
 
-<div class="content-section theme-blue">
+<div id="concert" class="content-section theme-blue">
     <div class="section-img">
         <img class="bw" loading="lazy" src="assets/images/feature-cb.jpg" alt="Image of Charlotte">
     </div>
     <div class="section-title">
-        <h2 class="white">APRIL 20TH</h2>
+        <h2 class="white">Next concert</h2>
     </div>
     <div class="section-body">
+        <h2>APRIL 20TH</h2>
         <p>Our next concert will be on <strong>Saturday 20th April at 12pm</strong> in aid of a
             wonderful charity called <a href="https://www.charlottesbag.com/">Charlotte's Bag</a>.</p>
         <p>Charlotte Eades died from glioblastoma in February 2016, just a week after her 19th birthday – but before
@@ -54,16 +56,16 @@ layout: "base.njk"
         <p>The charity created in her name is one of the few UK charities specifically focussing on raising funds for
             research into, and awareness of, glioblastoma multiforme – a very rare and currently nearly always
             terminal form of brain cancer can affect anyone of any age.</p>
-        <p>Please join us in supporting Charlotte's charity, <a href="/events">full details on the concert can be found
-                here</a>!</p>
+        <p>Please join us in supporting Charlotte's charity, see our <a href="/events">Concert Listings</a> for full details.</p>
     </div>
 </div>
 
-<div class="content-section theme-white">
+<div id="charity" class="content-section theme-white">
     <div class="section-title">
         <h2>Charity Concerts</h2>
     </div>
     <div class="section-body">
+
         <p>The Redstone Community Big Band perform a number of public charity concerts each year to raise money for local
             organisations, that have usually nominated by a band member.</p>
         <p>If you would like to come along and support the band at our next concert then please check out <a
@@ -94,7 +96,7 @@ layout: "base.njk"
     </div>
 </div>
 
-<div id="md" class="content-section theme-grey">
+<div id="musicaldirector" class="content-section theme-grey">
     <div class="section-img">
         <img loading="lazy" src="assets/images/IMG_GR.JPG" alt="Image of Graham Russell">
     </div>
@@ -113,7 +115,7 @@ layout: "base.njk"
     </div>
 </div>
 
-<div class="content-section theme-orange">
+<div id="join" class="content-section theme-orange">
     <div class="section-title">
         <h2>Contact us</h2>
     </div>
