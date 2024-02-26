@@ -57,6 +57,9 @@ $section-padding: 4rem;
     width: min(80%, 600px);
     z-index: 1;
     .rs { fill: $clr-primary-500; }
+    .the, .cbb, .lines, .star {
+      fill: white;
+    }
   }
 
   .social {
