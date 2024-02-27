@@ -194,7 +194,7 @@ $section-padding: 4rem;
   place-items: center;
   background-image: linear-gradient(hsl(0 0% 10%),hsl(0 0% 5%));
   padding: 3rem;
-  min-height: 50dvh;
+  min-height: 38dvh;
   z-index: 10;
   img {
     width: min(200px, 90%);
@@ -404,15 +404,26 @@ $section-padding: 4rem;
 
 }
 .page-gallery {
-  h1 {
+  header {
+    position: relative;
+    inset: 0 0 auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    font-weight: $fw-normal;
-    color: $clr-grey-900;
-    margin: 1rem 2rem;
+    margin: 0;
+    background-color: $clr-grey-100;
+    padding: .75rem .5rem;
+    h1 {
+      flex-grow: 1;
+      font-size: 2rem;
+      font-weight: $fw-normal;
+      color: $clr-grey-900;
+      line-height: 1;
+      text-transform: uppercase;
+      margin: 0;
+    }
   }
+
 }
 
 

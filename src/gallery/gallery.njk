@@ -3,10 +3,11 @@ title: "Redstone Community Big Band - Gallery"
 pageClass: "page-gallery"
 layout: "base.njk"
 ---
-
-<div  aria-roledescription="Image gallery" aria-label="Image gallery">
-    <h1>RCBB Gallery - {{ gallery | length }} Images</h1>
-    <ul class="gallery-container">
+<header>
+    <h1>RCBB Image Gallery ({{ gallery | length }})</h1>
+</header>
+<div aria-roledescription="Image gallery">
+    <ul class="gallery-container" aria-label="Image gallery">
         {% for img in gallery %}
         <li>
             <a class="glightbox"
@@ -21,3 +22,5 @@ layout: "base.njk"
         {% endfor %}
     </ul>
 </div>
+
+{% include 'partials/footer.njk' %}
