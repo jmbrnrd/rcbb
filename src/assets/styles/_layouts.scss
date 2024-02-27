@@ -403,6 +403,17 @@ $section-padding: 4rem;
   }
 
 }
+.page-gallery {
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: $fw-normal;
+    color: $clr-grey-900;
+    margin: 1rem 2rem;
+  }
+}
 
 
 

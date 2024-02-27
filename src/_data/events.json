@@ -34,6 +34,16 @@
   },
   {
     "date": ["26","Nov","2022"],
+    "title":  "King Centre Special",
+    "desc": "All proceeds will be shared between Macmillan Cancer Support and Sharing Lives.",
+    "img":  "RCBB-flyer-202210.jpg",
+    "charity": "logo-macmillan.png",
+    "time": "7pm for 7:30pm – 9:30pm",
+    "venue":  "The King Centre, Chessington KT9 2GZ",
+    "tickets": "£10"
+  },
+  {
+    "date": ["29","Oct","2022"],
     "title":  "Film & TV Special",
     "desc": "Come down and enjoy some classic TV and film themes and help us raise a little money for the Samaritans..",
     "img":  "RCBB-flyer-202211.jpeg",

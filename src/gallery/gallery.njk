@@ -4,7 +4,8 @@ pageClass: "page-gallery"
 layout: "base.njk"
 ---
 
-<div class="glightbox-container" aria-roledescription="Image gallery" aria-label="Image gallery">
+<div  aria-roledescription="Image gallery" aria-label="Image gallery">
+    <h1>RCBB Gallery - {{ gallery | length }} Images</h1>
     <ul class="gallery-container">
         {% for img in gallery %}
         <li>
