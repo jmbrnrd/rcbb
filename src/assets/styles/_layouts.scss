@@ -32,6 +32,8 @@ $section-padding: 4rem;
   grid-template-areas: 'stack';
   place-items: center;
   overflow: hidden;
+  background-color: $clr-grey-900;
+
   > * { grid-area: stack; }
 
   .overlay {
@@ -47,8 +49,7 @@ $section-padding: 4rem;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    opacity: .85;
-    filter: blur(3px) brightness(.5);
+    opacity: .5;
   }
 
   .logo {
@@ -369,7 +370,7 @@ $section-padding: 4rem;
   color: $clr-grey-900 !important;
 }
 .bw {
-  filter: saturate(0);
+  //filter: saturate(0);
 }
 
 .gallery-container {
