@@ -1,11 +1,12 @@
 
-import Glightbox from 'glightbox/src/js/glightbox';
+import glightbox from 'glightbox/dist/js/glightbox';
 
 export default function () {
-    console.log('Glightbox');
-    const lightbox = Glightbox({
+
+    const lightbox = glightbox({
         touchNavigation: true,
         loop: true,
         autoplayVideos: true
     });
+    console.log('lightbox loaded!');
 }

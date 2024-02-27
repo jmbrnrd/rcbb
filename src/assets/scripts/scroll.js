@@ -7,7 +7,7 @@ export default function () {
     const lenis = new Lenis();
     gsap.registerPlugin(ScrollTrigger);
 
-    console.log(document.querySelector('.hero'));
+    const rcbbHero = document.querySelector('.hero');
     const rcbbLogo = document.querySelector('.logo');
 
     // lenis.on('scroll', (e) => {
@@ -56,20 +56,24 @@ export default function () {
                 })
         }
 
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.hero',
-                start: 'center center',
-                end: 'bottom top',
-                scrub: true,
-                // markers: true
-            }
-        });
+        if (!!rcbbHero) {
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.hero',
+                    start: 'center center',
+                    end: 'bottom top',
+                    scrub: true,
+                    // markers: true
+                }
+            });
+            tl.to('.bg', {
+                //y: 100,
+                scale: 1.1,
+            });
+        }
 
-        // tl.to('.bg', {
-        //     //y: 100,
-        //     scale: 1.1,
-        // });
+
+
 
         const anchors = document.querySelectorAll('a');
 
