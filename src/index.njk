@@ -36,7 +36,7 @@ layout: "base.njk"
            as well as occasional private bookings: local shows, wedding anniversaries etc. See our <a 
                     href="/events">Concert & Events Listing</a> for details.</p>
         <p>If you would like information about booking the Redstone Community Big Band for you event or private
-            function, please email <a href="mailto:enquiries@redstonebigband.com">RCBB Enquiries</a></p>
+            function, please email {{ config.email.enquiries | urlize | safe }}</p>
     </div>
 </div>
 
@@ -70,7 +70,7 @@ layout: "base.njk"
             organisations, that have usually nominated by a band member.</p>
         <p>If you would like to come along and support the band at our next concert then please check out <a
                     href="/events">Concert & Events Listing</a>, or follow us on Social Media.</p>
-        <p>If you are interested in booking the band for an event, or private function, then please email <a href="mailto:enquiries@redstonebigband.com">RCBB Enquiries</a></p>
+        <p>If you are interested in booking the band for an event, or private function, then please email {{ config.email.enquiries | urlize | safe }}</p>
         <div class="logo-grid">
             <a href="https://www.bhf.org.uk/"><img loading="lazy" src="assets/images/logo-bhf.png" alt="British Heart
             Foundation
@@ -127,7 +127,7 @@ layout: "base.njk"
             above. No previous jazz experience is necessary and there are no auditions.</p>
         <p>However, whilst we don't limit our sections to traditional big band numbers (we currently have 10 alto sax
             players for example!), we are constrained by our rehearsal space and concert logistics.</p>
-        <p>Email us with your details (instrument/experience etc.) and we'll let you know whether we currently have
+        <p>Email us with your details (instrument/experience etc.) to {{ config.email.enquiries | urlize | safe }} and we'll let you know whether we currently have
             places available. If we can't offer you a place immediately then you may be able to 'dep' at rehearsals,
             or just come along and watch.
         </p>

@@ -374,24 +374,28 @@ $section-padding: 4rem;
 
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: .5rem;
   margin:.5rem;
   li {
     overflow: hidden;
+    background-color: black;
     a {
       display: block;
-      transition: scale .3s ease-out;
+      opacity: .8;
+      scale: 1;
+      transition: all .3s ease-out;
 
       &:hover {
-        scale: 1.1;
+        scale: 1.25;
+        opacity: 1;
       }
 
       img {
         width: auto;
         height: 100%;
         object-fit: cover;
-        aspect-ratio: 3/2;
+        aspect-ratio: 1;
       }
     }
 
