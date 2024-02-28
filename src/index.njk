@@ -137,6 +137,7 @@ layout: "base.njk"
                            aria-label="{{ img.desc }}"
                            data-glightbox="description: {{ img.desc }}">
                             <img loading="lazy"
+                                 alt="Video: {{ img.desc }}"
                                  src="{{ img.thumbnail }}">
                         </a>
                     {% else %}
@@ -145,6 +146,7 @@ layout: "base.njk"
                        aria-label="{{ img.desc }}"
                        data-glightbox="description: {{ img.desc }}">
                         <img loading="lazy"
+                             alt="Image: {{ img.desc }}"
                              src="https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_600/v1707550787/rcbb/images/{{ img.src }}.jpg">
                     </a>
                         {% endif %}
