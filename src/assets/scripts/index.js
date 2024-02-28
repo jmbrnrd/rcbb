@@ -5,7 +5,6 @@ import glightbox from './glightbox';
 scroll();
 glightbox();
 
-
 /**
  * Randomly set the hero images
  */
