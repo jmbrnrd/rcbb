@@ -126,6 +126,17 @@ layout: "base.njk"
         <ul class="gallery-container" aria-label="Image gallery">
             {% for img in gallery %}
                 <li>
+                    {% if img.type === 'video' %}
+                        <a class="glightbox"
+                           href="{{ img.src }}"
+                           aria-label="{{ img.title }}"
+                           title="Open image viewer"
+                           data-glightbox="description: {{ img.desc }}">
+                            <img loading="lazy"
+                                 alt="{{ img.title }}"
+                                 src="{{ img.thumbnail }}">
+                        </a>
+                    {% else %}
                     <a class="glightbox"
                        href="https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_2400/v1707550787/rcbb/images/{{ img.src }}.jpg"
                        aria-label="{{ img.title }}"
@@ -135,6 +146,7 @@ layout: "base.njk"
                              alt="{{ img.title }}"
                              src="https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_600/v1707550787/rcbb/images/{{ img.src }}.jpg">
                     </a>
+                        {% endif %}
                 </li>
             {% endfor %}
         </ul>
