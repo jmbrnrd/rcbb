@@ -67,7 +67,7 @@ export default function () {
                 }
             });
             tl.to('.bg', {
-                scale: 1.1,
+                scale: 1.05,
             });
         }
 
