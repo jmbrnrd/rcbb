@@ -1,85 +1,85 @@
 [
   {
-    "src": "287368_174263242644984_5496910_o",
-    "desc": "RCBB at Gatton Park Show back in the day."
+    "id": "287368_174263242644984_5496910_o",
+    "description": "RCBB at Gatton Park Show back in the day."
   },
   {
-    "src": "Band_Xmas_2016-_12",
-    "desc": "The Redstone Community Big Band does Christmas 2016"
+    "id": "Band_Xmas_2016-_12",
+    "description": "The Redstone Community Big Band does Christmas 2016"
   },
   {
-    "src": "Band_Xmas_2016-_03",
-    "desc": "The Redstone Community Big Christmas 2016"
+    "id": "Band_Xmas_2016-_03",
+    "description": "The Redstone Community Big Christmas 2016"
   },
   {
-    "src": "rcbb-bones-001",
-    "desc": "Bones, lots of them."
+    "id": "rcbb-bones-001",
+    "description": "Bones, lots of them."
   },
   {
-    "src": "DSC02079",
-    "desc": "The MDs mum enjoying the concert (and the wine)."
+    "id": "DSC02079",
+    "description": "The MDs mum enjoying the concert (and the wine)."
   },
   {
-    "src": "IMG_8292",
-    "desc": "The Redstone Community Big Band"
+    "id": "IMG_8292",
+    "description": "The Redstone Community Big Band"
   },
   {
-    "src": "IMG_8286",
-    "desc": "The Redstone Community Big Band"
+    "id": "IMG_8286",
+    "description": "The Redstone Community Big Band"
   },
   {
-    "src": "rcbb-anne-001",
-    "desc": "Anne soloing on the baritone sax"
+    "id": "rcbb-anne-001",
+    "description": "Anne soloing on the baritone sax"
   },
   {
-    "src": "rcbb-graham-001",
-    "desc": "Graham in full flow!"
+    "id": "rcbb-graham-001",
+    "description": "Graham in full flow!"
   },
   {
-    "src": "rcbb-dave-001",
-    "desc": "Big Dave on the tuba."
+    "id": "rcbb-dave-001",
+    "description": "Big Dave on the tuba."
   },
   {
-    "src": "rcbb-fran-001",
-    "desc": "Our band secretary and one of the founder members."
+    "id": "rcbb-fran-001",
+    "description": "Our band secretary and one of the founder members."
   },
   {
     "type": "video",
-    "src": "https://vimeo.com/510564743",
-    "desc": "Our 2021 'Lockdown Video' of Big Spender.",
-    "thumbnail": "https://i.vimeocdn.com/video/1056920058-580bd81cf01e723e9add9303862d3fcf2d311ff5f96816fbdcad227e1f349d87-d_236x133"
+    "href": "https://vimeo.com/510564743",
+    "description": "Our 2021 'Lockdown Video' of Big Spender.",
+    "src": "https://i.vimeocdn.com/video/1056920058-580bd81cf01e723e9add9303862d3fcf2d311ff5f96816fbdcad227e1f349d87-d_236x133"
   },
   {
-    "src": "rcbb-howard-001",
-    "desc": "Howard's way"
+    "id": "rcbb-howard-001",
+    "description": "Howard's way"
   },
   {
-    "src": "rcbb-chris-001",
-    "desc": "Chris on the Gibson"
+    "id": "rcbb-chris-001",
+    "description": "Chris on the Gibson"
   },
   {
-    "src": "rcbb-colin-001",
-    "desc": "Colin on alto sax"
+    "id": "rcbb-colin-001",
+    "description": "Colin on alto sax"
   },
   {
-    "src": "rcbb-altos-001",
-    "desc": "Our alto section (some of them!)"
+    "id": "rcbb-altos-001",
+    "description": "Our alto section (some of them!)"
   },
   {
-    "src": "rcbb-nicky-001",
-    "desc": "Nicky singing her heart out."
+    "id": "rcbb-nicky-001",
+    "description": "Nicky singing her heart out."
   },
   {
-    "src": "rcbb-trumpets-001",
-    "desc": "They all like to blow their own..."
+    "id": "rcbb-trumpets-001",
+    "description": "They all like to blow their own..."
   },
   {
-    "src": "rcbb-tenors-001",
-    "desc": "Tenor madness..."
+    "id": "rcbb-tenors-001",
+    "description": "Tenor madness..."
   },
   {
-    "src": "rcbb-kevin-001",
-    "desc": "Remembering the lovely Kevin our former pianist."
+    "id": "rcbb-kevin-001",
+    "description": "Remembering the lovely Kevin our former pianist."
   }
 ]
 

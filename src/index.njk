@@ -133,12 +133,12 @@ layout: "base.njk"
                 <li>
                     {% if img.type === 'video' %}
                         <a class="glightbox"
-                           href="{{ img.src }}"
+                           href="{{ img.href }}"
                            aria-label="{{ img.desc }}"
                            data-glightbox="description: {{ img.desc }}">
                             <img loading="lazy"
                                  alt="Video: {{ img.desc }}"
-                                 src="{{ img.thumbnail }}">
+                                 src="{{ img.src }}">
                         </a>
                     {% else %}
                     <a class="glightbox"
