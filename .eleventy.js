@@ -9,7 +9,7 @@ module.exports = function (eleventy) {
       bundle: true,
       sourcemap: true,
       outfile: './public/assets/scripts/bundle.js',
-      minify: false
+      minify: true
     })
   })
 
