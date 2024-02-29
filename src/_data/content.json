@@ -1,0 +1,44 @@
+{
+  "charities": [
+    {
+      "name": "British Heart Foundation",
+      "href": "https://www.bhf.org.uk/",
+      "logo": "logo-bhf.png"
+    },
+    {
+      "name": "Charlotte's Bag",
+      "href": "https://www.charlottesbag.com/",
+      "logo": "logo-charlottes-bag2.jpeg"
+    },
+    {
+      "name": "St Catherine's Hospice",
+      "href": "https://www.stch.org.uk/",
+      "logo": "logo-st-catherines.png"
+    },
+    {
+      "name": "Marie Curie",
+      "href": "https://www.mariecurie.org.uk/",
+      "logo": "logo-marie-curie.png"
+    },
+    {
+      "name": "Dementia 1st",
+      "href": "https://www.dementiafirst.org.uk/",
+      "logo": "logo-dementia-first.jpeg"
+    },
+    {
+      "name": "Macmillan Cancer Support",
+      "href": "https://www.macmillan.org.uk/",
+      "logo": "logo-macmillan.png"
+    },
+    {
+      "name": "Samaritans",
+      "href": "https://www.samaritans.org/",
+      "logo": "logo-samaritans.png"
+    },
+    {
+      "name": "Challengers",
+      "href": "https://disability-challengers.org/",
+      "logo": "logo-challengers.svg"
+    }
+  ]
+}

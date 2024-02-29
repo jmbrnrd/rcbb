@@ -72,31 +72,11 @@ layout: "base.njk"
                     href="/events" aria-label="View the Redstone Community Big Band events listing">Concert & Events Listing</a>, or follow us on Social Media.</p>
         <p>If you are interested in booking the band for an event, or private function, then please email {{ config.email.enquiries | urlize | safe }}</p>
         <div class="logo-grid">
-            <a href="https://www.bhf.org.uk/"><img loading="lazy" src="assets/images/logo-bhf.png" alt="British Heart
-            Foundation
-            Logo"></a>
-            <a href="https://www.charlottesbag.com/" aria-label="Visit Charlotte's Bag website">
-                <img loading="lazy" src="assets/images/logo-charlottes-bag2.jpeg" alt="Charlotte's Bag Logo Logo">
+            {% for charity in content.charities %}
+            <a href="{{ charity.href }}" aria-label="Visit {{ charity.name }} website">
+                <img loading="lazy" src="assets/images/{{ charity.logo }}" alt="{{ charity.name }} Logo">
             </a>
-            <a href="https://www.stch.org.uk/" aria-label="Visit St Catherine's Hospice website">
-                <img loading="lazy" src="assets/images/logo-st-catherines.png" alt="St
-            Catherine's Hospice Logo">
-            </a>
-            <a href="https://www.mariecurie.org.uk/" aria-label="Visit Marie Curie Support website">
-                <img loading="lazy" src="assets/images/logo-marie-curie.png" alt="Marie Curie Logo">
-            </a>
-            <a href="https://www.dementiafirst.org.uk/" aria-label="Visit Dementia 1st website">
-                <img loading="lazy" src="assets/images/logo-dementia-first.jpeg" alt="Dementia 1st Logo">
-            </a>
-            <a href="https://www.macmillan.org.uk/" aria-label="Visit Macmillan Support website">
-                <img loading="lazy" src="assets/images/logo-macmillan.png" alt="Macmillan">
-            </a>
-            <a href="https://www.samaritans.org/" aria-label="Visit Samaritans website">
-                <img loading="lazy" src="assets/images/logo-samaritans.svg" alt="Samaritans">
-            </a>
-            <a href="https://disability-challengers.org/" aria-label="Visit Challengers website">
-                <img loading="lazy" src="assets/images/logo-challengers.svg" alt="Challengers">
-            </a>
+            {%  endfor %}
         </div>
     </div>
 </section>
