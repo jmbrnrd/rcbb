@@ -134,20 +134,20 @@ layout: "base.njk"
                     {% if img.type === 'video' %}
                         <a class="glightbox"
                            href="{{ img.href }}"
-                           aria-label="{{ img.desc }}"
-                           data-glightbox="description: {{ img.desc }}">
+                           aria-label="{{ img.description }}"
+                           data-glightbox="description: {{ img.description }}">
                             <img loading="lazy"
-                                 alt="Video: {{ img.desc }}"
+                                 alt="Video: {{ img.description }}"
                                  src="{{ img.src }}">
                         </a>
                     {% else %}
                     <a class="glightbox"
-                       href="https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_2400/v1707550787/rcbb/images/{{ img.src }}.jpg"
-                       aria-label="{{ img.desc }}"
-                       data-glightbox="description: {{ img.desc }}">
+                       href="{{ config.cldImgPath.large }}{{ img.filename }}"
+                       aria-label="{{ img.description }}"
+                       data-glightbox="description: {{ img.description }}">
                         <img loading="lazy"
-                             alt="Image: {{ img.desc }}"
-                             src="https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_240/v1707550787/rcbb/images/{{ img.src }}.jpg">
+                             alt="Image: {{ img.description }}"
+                             src="{{  config.cldImgPath.small }}{{ img.filename }}">
                     </a>
                         {% endif %}
                 </li>
