@@ -45,8 +45,8 @@ layout: "base.njk"
                     {% endif %}
                 </div>
                 <div class="image">
-                    <a href="/assets/images/{{ event.img }}" aria-label="Download {{ event.name }} concert flyer">
-                        <img src="/assets/images/{{ event.img }}" alt="{{ event.name }} image">
+                    <a href="{{ config.cldImgPath.large }}{{ event.img }}" aria-label="Download {{ event.name }} concert flyer">
+                        <img src="{{ config.cldImgPath.small }}{{ event.img }}" alt="{{ event.name }} image">
                     </a>
                 </div>
             </li>
