@@ -1,9 +1,9 @@
 [
   {
     "date":  ["20","Apr","2024"],
-    "title":  "Easter Charity Concert",
-    "desc": "Big band charity concert in aid of Charlotte's BAG. Entry by donation.",
-    "img":  "feature-cb.jpg",
+    "title":  "Concert for Charlotte",
+    "desc": "Lunchtime charity concert of big band jazz, blues & swing music. Featuring guest dancers Chris Sorensen & friends with all proceeds going Charlotte's BAG charity. Entry by donation.",
+    "img":  "RCBB-flyer-202404_1x.png",
     "charity": "logo-charlottes-bag.png",
     "time": "11:45 for 12pm start",
     "venue":  "Perrywood Sports & Social Club",
@@ -25,7 +25,7 @@
     "date": ["17","Jun","2023"],
     "title":  "Duke Ellington Favourites",
     "desc": "Charity concert in aid of St Catherine's Hospice. We'll be playing a selection of Duke Ellington classics, plus a few of our favourites. ADMISSION FREE, donations welcome.",
-    "img":  "RCBB-flyer-202306.jpg",
+    "img":  "RCBB-flyer-202306",
     "charity": "logo-st-catherines.png",
     "time": "11:45 for 12pm",
     "venue":  "Perrywood Sports & Social Club",
@@ -36,7 +36,7 @@
     "date": ["26","Nov","2022"],
     "title":  "King Centre Special",
     "desc": "All proceeds will be shared between Macmillan Cancer Support and Sharing Lives.",
-    "img":  "RCBB-flyer-202210.jpg",
+    "img":  "RCBB-flyer-202210",
     "charity": "logo-macmillan.png",
     "time": "7pm for 7:30pm – 9:30pm",
     "venue":  "The King Centre, Chessington KT9 2GZ",
@@ -46,14 +46,14 @@
     "date": ["29","Oct","2022"],
     "title":  "Film & TV Special",
     "desc": "Come down and enjoy some classic TV and film themes and help us raise a little money for the Samaritans..",
-    "img":  "RCBB-flyer-202211.jpeg",
+    "img":  "RCBB-flyer-202211",
     "charity": "logo-samaritans.svg"
   },
   {
     "date": ["07","May","2022"],
     "title":  "Charity Concert",
     "desc": "Lunchtime charity concert of big band music with all proceeds going to Macmillan Cancer Support.",
-    "img":  "RCBB-flyer-202205.png",
+    "img":  "RCBB-flyer-202205",
     "charity": "logo-macmillan.png",
     "time": "11:45 for 12pm",
     "venue":  "Perrywood Sports & Social Club",
@@ -63,7 +63,7 @@
     "date": ["27","Apr","2019"],
     "title":  "Swing into Spring",
     "desc": "Lunchtime charity concert of big band music with all proceeds being donated to Marie Curie.",
-    "img":  "RCBB-Flyer-201904.png",
+    "img":  "RCBB-Flyer-201904",
     "charity": "logo-marie-curie.png",
     "time": "11:45 for 12pm",
     "venue":  "Perrywood Sports & Social Club",
@@ -79,7 +79,7 @@
     "date":  ["10","Nov","2018"],
     "title":  "Centenary of the Armistice",
     "desc": "Join us in saying thank you and remembering all those that served & sacrificed.",
-    "img":  "RCBB-flyer-201811-final.png",
+    "img":  "RCBB-flyer-201811-final",
     "time": "11:45 for 12pm",
     "venue":  "Perrywood Sports & Social Club",
     "tickets": "Entry by donation"
@@ -88,7 +88,7 @@
     "date": ["20","May","17"],
     "title":  "The Redstone Variety Show",
     "desc": "The Redstone Community Big Band with Swing Thing lindy hop dance group and comedy mind-readerBaldwin, plus comedians Pete White and Dave Nanton.",
-    "img":  "RCBB-flyer-201705.jpg",
+    "img":  "RCBB-flyer-201705",
     "time": "7pm for 7:30pm",
     "venue":  "The Warwick School, Redhill",
     "tickets":"£10.50"
@@ -97,7 +97,7 @@
     "date": ["23","Apr","2016"],
     "title":  "Spring Fever",
     "desc": "A fabulous evening of great music, with donations going to Challengers Charity for Disabled Children.",
-    "img":  "RCBB-flyer-201604.jpg",
+    "img":  "RCBB-flyer-201604",
     "charity": "logo-challengers.svg"
   }
 ]
