@@ -5,8 +5,9 @@
     "IMG_8286.jpg"
   ],
   "cldImgPath": {
-    "small": "https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_300/rcbb/flyers/",
-    "large": "https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_2400/rcbb/flyers/"
+    "root": "https://res.cloudinary.com/rdl/image/upload/",
+    "small": "https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_300/rcbb/",
+    "large": "https://res.cloudinary.com/rdl/image/upload/c_scale,f_auto,w_2400/rcbb/"
 
   },
   "email": {
