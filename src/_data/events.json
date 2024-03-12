@@ -2,7 +2,7 @@
   {
     "date":  ["20","Apr","2024"],
     "title":  "Concert for Charlotte",
-    "desc": "Lunchtime charity concert of big band jazz, blues & swing music. Featuring guest dancers Chris Sorensen & friends with all proceeds going Charlotte's BAG charity. Entry by donation.",
+    "desc": "Lunchtime charity concert of big band jazz, blues & swing music. Featuring guest dancers Chris Sorensen & friends with all proceeds going Charlotte's BAG charity.",
     "img":  "RCBB-flyer-202404_1x.png",
     "charity": "logo-charlottes-bag.png",
     "time": "11:45 for 12pm start",
@@ -73,7 +73,7 @@
     "date": ["15","Dec","2018"],
     "title":  "PreChristmas Festive Tunes",
     "desc": "",
-    "img":  "RCBB-flyer-201812.jpg"
+    "img":  "RCBB-flyer-201812"
   },
   {
     "date":  ["10","Nov","2018"],
