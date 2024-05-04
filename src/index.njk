@@ -42,7 +42,7 @@ layout: "base.njk"
 
 <section id="concert" class="content-section theme-blue">
     <div class="section-img">
-        <img class="bw" loading="eager" src="assets/images/feature-cb.jpg" alt="Image of Charlotte">
+        <img class="bw" loading="eager" src="{{ config.cldImgPath.root }}c_scale,f_auto,w_800/rcbb/assets/feature-cb.jpg" alt="Image of Charlotte">
     </div>
     <div class="section-title">
         <h2 class="white">Thank You!</h2>
@@ -77,7 +77,7 @@ layout: "base.njk"
         <div class="logo-grid">
             {% for charity in content.charities %}
             <a href="{{ charity.href }}" aria-label="Visit {{ charity.name }} website">
-                <img loading="lazy" src="assets/images/{{ charity.logo }}" alt="{{ charity.name }} Logo">
+                <img loading="lazy" src="{{ config.cldImgPath.root }}c_scale,f_auto,w_240/rcbb/assets/{{ charity.logo }}" alt="{{ charity.name }} Logo">
             </a>
             {%  endfor %}
         </div>
@@ -88,7 +88,7 @@ layout: "base.njk"
 
 <section id="md" class="content-section theme-grey">
     <div class="section-img">
-        <img loading="lazy" src="{{ '/assets/images/IMG_GR.JPG' }}" alt="Image of Graham Russell">
+        <img loading="lazy" src="{{ config.cldImgPath.root }}c_scale,f_auto,w_800/rcbb/assets/IMG_GR" alt="Image of Graham Russell">
     </div>
     <div class="section-title">
         <h2 class="white">Musical Director</h2>
@@ -130,7 +130,7 @@ layout: "base.njk"
                        data-glightbox="description: {{ img.description }}">
                         <img loading="lazy"
                              alt="Image: {{ img.description }}"
-                             src="{{  config.cldImgPath.small }}{{ img.filename }}">
+                             src="{{ config.cldImgPath.small }}{{ img.filename }}">
                     </a>
                         {% endif %}
                 </li>
