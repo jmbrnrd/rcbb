@@ -1,5 +1,16 @@
 [
   {
+    "date":  ["29","Nov","2025"],
+    "title":  "Autumn Fundraiser",
+    "desc": "The Redstone Community Big Band will be celebrating their 21st year in 2026 and this concert will be raising money for some music stand banners for that event.",
+    "img":  "flyers/RCBB-flyer-251129.jpg",
+    "charity": "",
+    "time": "From 11am - 1pm",
+    "venue":  "Perrywood Sports & Social Club",
+    "venueMapLink": "https://maps.app.goo.gl/5kFZfyDBpQ7njYnAA",
+    "tickets": "Free entry, donations accepted!"
+  },
+  {
     "date":  ["11","May","2025"],
     "title":  "VE-Day 80 Celebration",
     "desc": "The Redstone Community Big Band will be part of the Sidlow Community Association's VE Day 80 Celebrations. We'll be playing a selection of Glenn Miller and other period favourites from 2 - 4pm.",
