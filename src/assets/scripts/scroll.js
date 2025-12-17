@@ -37,15 +37,16 @@ export default function () {
                     stagger: .075,
                     y: -100,
                 })
-                .from('.the, .cbb', {
-                    opacity: 0,
-                    y: 50,
-                    stagger: .3
-                })
+
                 .from('.lines', {
                     duration: .2,
                     scaleX: 0,
                     transformOrigin: 'center',
+                })
+                .from('.the, .cbb', {
+                    opacity: 0,
+                    y: 50,
+                    stagger: .3
                 })
                 .from('.star', {
                     rotate: -520,
