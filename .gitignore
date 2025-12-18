@@ -3,7 +3,7 @@ node_modules
 
 # build artifacts
 public
-.idea
+.github/.idea
 
 # secrets and errors
 .env
@@ -12,5 +12,5 @@ public
 # macOS related files
 .DS_Store
 
-/.idea/modules.xml
+/.github/.idea/modules.xml
 /tls
