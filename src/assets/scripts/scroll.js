@@ -37,7 +37,6 @@ export default function () {
                     stagger: .075,
                     y: -100,
                 })
-
                 .from('.lines', {
                     duration: .2,
                     scaleX: 0,
