@@ -1,5 +1,17 @@
 [
   {
+    "date":  ["9","May","2026"],
+    "title":  "Anniversary Concert 2026",
+    "desc": "Celebrating a double anniversary in 2026, the Redstone Big Band will be performing a selection of their favourites tunes. Expect some classic big band swing, tunes from the great american songbook and a few more modern arrangements.",
+    "img":  "flyers/RBB-2026-A5_2x",
+    "charity": "",
+    "time": "Doors 6:30pm / Concert 7pm - 9:30pm",
+    "venue":  "Carrington School, Noke Drive, Redhill,  Surrey,  RH1 4AD",
+    "venueMapLink": "https://maps.app.goo.gl/jE99PcQh7TH7f6sw7",
+    "tickets": "£10 online, £15 on the door (subject to availability)",
+    "ticketLink": "https://buytickets.at/redstonebigband/2049023"
+  },
+  {
     "date":  ["29","Nov","2025"],
     "title":  "Autumn Fundraiser",
     "desc": "The Redstone Big Band will be celebrating their 21st year in 2026 and this concert will be raising money for some music stand banners for that event.",

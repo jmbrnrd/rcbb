@@ -342,6 +342,7 @@ html.lenis {
   span {
     display: block;
     font-size: 1rem;
+    margin-top:.25rem;
   }
   .desc {
     flex-grow: 1;
@@ -366,6 +367,28 @@ html.lenis {
   transition: all .3s ease-out;
   &:hover { transform: translateX(-5px); }
 }
+.btn-cta {
+  margin-block: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  //max-width: 360px;
+  gap: 1rem;
+  background: #D63A26;
+  color: #EFDBA8;
+  text-decoration: none;
+  padding: .75rem 1rem;
+  border-radius: 36px;
+  font-size: 1.5rem;
+  font-weight: $fw-normal;
+  transition: background-color .3s ease-out;
+  &:hover {
+    background-color: black;
+  }
+
+
+}
 
 // Utils
 // -------------------------------------
@@ -389,6 +412,11 @@ html.lenis {
   }
   &-white {
     background-color: white;
+    h2 { color: $clr-primary-500; }
+    p { color: $clr-grey-900; }
+  }
+  &-cream {
+    background-color: #EFDBA8;
     h2 { color: $clr-primary-500; }
     p { color: $clr-grey-900; }
   }

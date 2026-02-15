@@ -34,14 +34,17 @@ layout: "base.njk"
                     {% if event.venueMapLink %}
                         <span><strong>Venue</strong>: <a href="{{ event.venueMapLink }}"  class="inline" target="_blank" aria-label="Venue directions">{{ event.venue }}</a></span>
                     {% endif %}
-                    {% if event.tickets %}
-                        <span><strong>Tickets</strong>: {{ event.tickets }}</span>
-                    {% endif %}
                     {% if event.time %}
                         <span><strong>Doors</strong>: {{ event.time }}</a></span>
                     {% endif %}
+                    {% if event.tickets %}
+                        <span><strong>Tickets</strong>: {{ event.tickets }}</span>
+                    {% endif %}
                     {% if event.charity %}
                     <img loading="lazy" class="img-charity" alt="Charity logo" src="/assets/images/{{ event.charity }}">
+                    {% endif %}
+                    {% if event.ticketLink %}
+                        <span><a href="{{ event.ticketLink }}" target="_blank" aria-label="Buy tickets" class="btn-cta">BUY TICKETS ONLINE</a></span>
                     {% endif %}
                 </div>
                 <div class="image">
