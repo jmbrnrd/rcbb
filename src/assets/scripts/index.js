@@ -10,7 +10,7 @@ glightbox();
  */
 function setHeroImage() {
 
-    const heroImages = ["IMG_8292.jpg","IMG_0001.jpg","IMG_8286.jpg"];
+    const heroImages = ["May_Gig-_22","May_Gig-_11","May_Gig-_18","May_Gig-_9"];
     const hero = document.querySelector('.hero .bg')
 
     hero.src =
