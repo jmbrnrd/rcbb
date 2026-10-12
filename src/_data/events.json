@@ -1,5 +1,16 @@
 [
   {
+    "date":  ["28","Nov","2026"],
+    "title":  "Christmas Swing Special",
+    "desc": "Free lunchtime concert of seasonal big band arrangements. All donations will go to The Lucy Rainer Foundation.",
+    "img":  "flyers/RBB-A5-Flyer-Christmas.jpg",
+    "charity": "logo-lucy-rainer.jpg",
+    "time": "Doors 11:45 / Concert 12pm - 1:30pm",
+    "venue":  "Perrywood Sports & Social Club",
+    "venueMapLink": "https://maps.app.goo.gl/5kFZfyDBpQ7njYnAA",
+    "tickets": "FREE ENTRY, DONATIONS ACCEPTED!"
+  },
+  {
     "date":  ["9","May","2026"],
     "title":  "Anniversary Concert 2026",
     "desc": "The Redstone Big Band will be performing a selection of their favourites tunes. Expect some classic big band swing, tunes from the great american songbook and a few more modern arrangements.",
@@ -8,8 +19,7 @@
     "time": "Doors 6:30pm / Concert 7pm - 9:30pm",
     "venue":  "Carrington School, Noke Drive, Redhill,  Surrey,  RH1 4AD",
     "venueMapLink": "https://maps.app.goo.gl/jE99PcQh7TH7f6sw7",
-    "tickets": "£10 online, £15 on the door (subject to availability)",
-    "ticketLink": "https://buytickets.at/redstonebigband/2049023"
+    "tickets": "£10 online, £15 on the door (subject to availability)"
   },
   {
     "date":  ["29","Nov","2025"],

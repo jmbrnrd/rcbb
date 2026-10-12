@@ -311,7 +311,7 @@ html.lenis {
       width: 100%;
       text-align: center;
       line-height: 1;
-      padding: .5rem .375rem .375rem;
+      padding: .75rem .375rem .375rem;
     }
     .m {
       font-size: .8rem;
@@ -325,6 +325,9 @@ html.lenis {
       line-height: 1;
       text-align: center;
     }
+    span {
+      margin: 0;
+    }
   }
   .image {
     height: 100%;
@@ -336,7 +339,7 @@ html.lenis {
 
   }
   .img-charity {
-    max-height: 3rem;
+    max-height: 5rem;
     margin-top: 1rem;
   }
   span {
